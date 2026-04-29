@@ -121,8 +121,8 @@ the first build session, the failure taxonomy before the seam implementation.
 
 ## Read More
 
-The full account — what was built, what broke, what the AI wrote that shouldn't have
-shipped, and what the governance framework is — is published at
+The full account: what was built, what broke, what the AI wrote that shouldn't have
+shipped, and what the governance framework is published at
 [Systems of Thought](https://www.systemsofthought.com).
 
 ---
