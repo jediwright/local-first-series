@@ -1,7 +1,7 @@
 # Local-First Prototype Series
 
 A series of working prototypes demonstrating local-first architecture applied to
-domains the local-first community has mostly avoided: commerce, healthcare, and
+several domains: commerce, healthcare, and
 social networking.
 
 The central argument: local-first works when something is irreducibly server-dependent
