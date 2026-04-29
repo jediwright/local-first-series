@@ -38,17 +38,17 @@ export const provider = new IndexeddbPersistence('app-state', doc)
 | checkout-seam | `customer` | Y.Map | Customer profile fields |
 | fhir-seam | `intake` | Y.Map | Form field values keyed by field name |
 | fhir-seam | `submissions` | Y.Map | Submission records keyed by submissionId |
-| SocialPings | `pings` | Y.Map | Ephemeral ping state keyed by channel |
-| SocialPings | `threads` | Y.Map | Thread history keyed by canonical thread key |
-| SocialPings | `channels` | Y.Map | Interest channel memberships |
-| SocialPings | `assets` | Y.Map | Thread asset library keyed by assetId |
+| Local-First Social | `pings` | Y.Map | Ephemeral ping state keyed by channel |
+| Local-First Social | `threads` | Y.Map | Thread history keyed by canonical thread key |
+| Local-First Social | `channels` | Y.Map | Interest channel memberships |
+| Local-First Social | `assets` | Y.Map | Thread asset library keyed by assetId |
 
 ---
 
 ## The profile Map — Nested Structure
 
 The `profile` map is shared across all prototypes as the pattern for local
-identity and relationship state. In SocialPings it carries the full social graph.
+identity and relationship state. In Local-First Social it carries the full social graph.
 
 ```typescript
 // Access pattern — always via doc, never via cached reference
@@ -136,7 +136,7 @@ const assetId = `asset_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`
 **Never export nested Y.Maps or Y.Arrays as module-level constants.**
 
 This is the most important rule in this document. The stale reference bug has
-appeared in two prototypes (checkout-seam cart badge, SocialPings trust graph)
+appeared in two prototypes (checkout-seam cart badge, Local-First Social trust graph)
 and costs significant debugging time each time.
 
 The failure mode: a Y.Map or Y.Array nested inside another Y.Map is captured
@@ -223,7 +223,7 @@ Single-key mutations that stand alone do not require a transaction.
 
 ## Relay-Routing Keys vs. Local-Graph Keys
 
-In SocialPings, two key namespaces must not be mixed:
+In Local-First Social, two key namespaces must not be mixed:
 
 **Relay-routing keys** — used to address messages through the WebSocket relay.
 These are the `@handle` strings registered with the relay at connection time.
@@ -295,18 +295,18 @@ Variables by prototype:
 | checkout-seam | `STRIPE_SECRET_KEY` | `/api/checkout.js` |
 | checkout-seam | `STRIPE_PUBLISHABLE_KEY` | Client bundle |
 | fhir-seam | `FHIR_ENDPOINT` | `/api/submit.js` |
-| SocialPings | `RELAY_URL` | `src/lib/relay.js` |
-| SocialPings | `VITE_RELAY_URL` | Client bundle (Vite env prefix required) |
+| Local-First Social | `RELAY_URL` | `src/lib/relay.js` |
+| Local-First Social | `VITE_RELAY_URL` | Client bundle (Vite env prefix required) |
 
 ---
 
-## Codespace Terminal Constraints (SocialPings)
+## Codespace Terminal Constraints (Local-First Social)
 
 The GitHub Codespace terminal auto-converts dot-notation identifiers (`Y.Map`,
 `WebSocket.OPEN`, etc.) into markdown hyperlinks when writing files via heredoc.
 This corrupts TypeScript type annotations silently.
 
-Rules for terminal work in SocialPings:
+Rules for terminal work in Local-First Social:
 - Write Python patch scripts to `/tmp/scriptname.py` using `cat >` heredoc, then run with `python3`
 - For any file containing `Y.Map` TypeScript types: use the Codespace editor, not the terminal
 - For git commit messages: `echo 'message' > /tmp/commitmsg.txt && git commit -F /tmp/commitmsg.txt`
