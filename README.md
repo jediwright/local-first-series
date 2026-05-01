@@ -8,12 +8,12 @@ The name for that boundary is **the seam**.
 
 ## The Seam Stack
 
-The series demonstrates a four-layer architecture for local-first systems where boundary events carry weight. I call it the **Seam Stack**, and it will be more heavily documented soon at [seamstack.org](https://seamstack.org).
+The series demonstrates a four-layer architecture for local-first systems where boundary events carry weight. I call it the **Seam Stack**, and it will be more heavily documented soon at seamstack.org.
 
 | Layer | Question it answers | Technology in this series |
 |---|---|---|
 | **Substrate** | Where does the data live, who owns it, who can access it? | Y.js + IndexedDB (per-user, local); Solid Pods (employment seam, spec-only) |
-| **Governance** | How is meaning structured, classified, and made machine-legible? | The Tiered Content Framework (TCF) — six tiers with three cross-cutting governance dimensions |
+| **Governance** | How is meaning structured, classified, and made machine-legible? | [The Tiered Content Framework (TCF)] | [https://www.jediwright.com/content-strategy-framework] — six tiers with three cross-cutting governance dimensions |
 | **Boundary** | What happens at the transition where the relationship between client and server changes state? | The Pattern Commons seam discipline — the seam-as-architectural-object |
 | **Evidence** | What makes the record contemporaneous, tamper-evident, and legible to deferred parties without platform mediation? | W3C Verifiable Credentials Data Model 2.0 + RFC 3161 trusted timestamping + OpenTimestamps + bilateral cryptographic signatures (employment seam, spec-only) |
 
