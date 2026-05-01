@@ -19,7 +19,7 @@ The series demonstrates a four-layer architecture for local-first systems where 
 
 The synthesis claim is that all four layers are required when boundary events carry legal and evidentiary weight, and that they compose into a coherent architecture for local-first systems in those domains. The series demonstrates the layers across domains, with the employment seam as the entry where all four become necessary at once. None of the four layers is novel in isolation; the synthesis is the architectural composition.
 
-The Seam Stack is documented at [seamstack.org](https://seamstack.org). This repo is its working home.
+The Seam Stack will be documented at [seamstack.org](https://seamstack.org) soon. This repo is its working home.
 
 ## The Prototypes
 
