@@ -8,7 +8,7 @@ The name for that boundary is **the seam**.
 
 ## The Seam Stack
 
-The series demonstrates a four-layer architecture for local-first systems where boundary events carry weight. We call it the **Seam Stack**, and it is documented at [seamstack.org](https://seamstack.org).
+The series demonstrates a four-layer architecture for local-first systems where boundary events carry weight. I call it the **Seam Stack**, and it is documented at [seamstack.org](https://seamstack.org).
 
 | Layer | Question it answers | Technology in this series |
 |---|---|---|
