@@ -1,6 +1,6 @@
 # Local-First Prototype Series
 
-A series of working prototypes demonstrating local-first architecture applied to several domains: governance monitoring, commerce, healthcare, and social networking. Plus a seventh entry — a published architectural specification, not yet built — that extends the same argument into the employment relationship.
+A series of working prototypes demonstrating local-first architecture applied to several domains: governance monitoring, commerce, healthcare, and social networking. Plus a new entry — a published architectural specification, not yet built — that extends the same argument into the employment relationship.
 
 The central argument: local-first works when something irreducibly server-dependent has to happen. The question is not whether to touch a server — sometimes you must. The question is how to design that boundary deliberately, minimize it, and ensure the client loses nothing when it fails.
 
