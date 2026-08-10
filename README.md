@@ -43,7 +43,7 @@ The fifth entry is the first in the series where the specification preceded the 
 
 A root abstract pattern plus seven domain instantiations documented across the series. Each is designed as a reusable template — domain-agnostic, extractable, applicable beyond the prototype that first demonstrated it.
 
-**#0 — The governed crossing.** The abstract pattern that all prior entries have been instantiating. A governed crossing is the boundary event at which a party with contextual knowledge crosses into or out of a structured relationship under a capability grant. Four constitutive properties — declared scope, grant, gate, record — are invariant across all domain instantiations. The architectural argument: every such crossing must be explicit, gated, and recorded before it fires, with the platform facilitating the event and exiting rather than accumulating the relationship. Spec at [pattern-commons-00-the-governed-crossing](./pattern-commons/pattern-commons-00-the-governed-crossing-v0-1-1.md).
+**#0 — The governed crossing.** The abstract pattern that all prior entries have been instantiating. A governed crossing is the boundary event at which a party with contextual knowledge crosses into or out of a structured relationship under a capability grant. Four constitutive properties — declared scope, grant, gate, record — are invariant across all domain instantiations. The architectural argument: every such crossing must be explicit, gated, and recorded before it fires, with the platform facilitating the event and exiting rather than accumulating the relationship. Spec at [pattern-commons-00](./pattern-commons/pattern-commons-00-the-governed-crossing-v0-1-1.md).
 
 **#1 — The checkout seam.** Minimum server-dependent surface for a payment operation. Client preserves state on failure; writes the result record on success. Server is stateless and never consulted again after confirmation. Applies to: payment processing, identity verification, legal record creation, compliance logging.
 
@@ -67,7 +67,7 @@ These files govern the prototypes. They are series artifacts, not prototype-spec
 
 **`DESIGN.md`** — Design tokens and rationale for the series. The seam state palette (`seam-none`, `seam-connecting`, `seam-established`, `seam-error`) is the load-bearing design decision — it makes the architectural argument visible in the UI.
 
-**`STATE_CONVENTIONS.md`** — Authoritative conventions for Y.js state across all prototypes: map names and value types, key formats, which mutations require `doc.transact()`, which hooks require `attachArrayObserver()`. Every build session reads this before writing any code that touches Y.js state.
+**`STATE_CONVENTIONS.md`** — Authoritative conventions for Y.js state across prototypes #1–#4 (Y.js + IndexedDB stack). Does not apply to employment-seam, which runs Automerge + Keyhive — see the employment-seam README for its state conventions. Every build session on #1–#4 reads this before writing any code that touches Y.js state.
 
 **Vocabulary and schemas** — The base crossing-record vocabulary and employment-seam vocabulary are served from the [seam-stack](https://github.com/jediwright/seam-stack) repository via GitHub Pages:
 
