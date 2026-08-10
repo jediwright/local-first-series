@@ -1,12 +1,12 @@
 # Pattern Commons #0 — The Governed Crossing
 
-**Status:** Draft v0.1
+**Status:** v0.1.1 — Counter-Pass applied 2026-08-10 (SL-0072): R1 narrowed (#4 reclassified as infrastructure); R2 care-domain candidacy conditioned on open grantor eligibility model; R3 (a) — altitude/Artifact B distinction holds (Item 1 §1.1 is a standalone Form C document, not inside Artifact B).
 **Date:** August 10, 2026
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted
 **Series:** Local-first prototype series — Pattern Commons
 **Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam
 **Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2)
-**Stamps:** ⚑ SINGLE-CONTEXT — NOT PANELED. CONTEXTUAL register. Form C cluster PROPOSED per UFO Lexicon v1.5. NI-5 in effect throughout.
+**Stamps:** CONTEXTUAL register. Form C cluster PROPOSED per UFO Lexicon v1.5. NI-5 in effect throughout. Counter-Pass complete (SL-0072, 2026-08-10).
 
 ---
 
@@ -18,7 +18,7 @@ A governed crossing is the boundary event at which a party with contextual knowl
 
 ## What This Document Is
 
-Pattern Commons #0 is the root entry in the Pattern Commons series. It does not describe a new domain. It names and formalizes the pattern that all prior entries have been instantiating.
+Pattern Commons #0 is the root entry in the Pattern Commons series. It does not describe a new domain. It names and formalizes the pattern that the prior domain entries — #1, #2, #3, #5, #6, and #7 — have been instantiating. Entry #4 (attachArrayObserver) is infrastructure machinery used within instantiations, not an instantiation of the pattern: it carries no grant event and no grantor party of its own.
 
 The series has demonstrated the governed crossing across commerce (one seam per transaction), healthcare (one seam per intake), social networking (a seam per connection, distributed), and employment (a seam at every state change in a working relationship). Each domain generated its own spec. None of them named the abstract pattern they were demonstrating.
 
@@ -109,7 +109,7 @@ IRI namespace: `https://jediwright.github.io/seam-stack/vocab/crossing-record/0.
 
 ## The Domain Instances
 
-The prior Pattern Commons entries are instantiations of the governed crossing. They differ from each other in domain, legal substrate, participant model, and failure taxonomy. They share the four constitutive properties, the inversion, and the Seam Stack.
+The prior Pattern Commons domain entries (#1–#3, #5–#7) are instantiations of the governed crossing. They differ from each other in domain, legal substrate, participant model, and failure taxonomy. They share the four constitutive properties, the inversion, and the Seam Stack. Entry #4 is retained in the table below as supporting infrastructure — the "pattern, not domain" classification its stakes entry already carries — and is excluded from the invariance claim.
 
 | Entry | Domain | Seam trigger | Stakes |
 |---|---|---|---|
@@ -146,7 +146,7 @@ The employment seam is the highest-stakes instantiation identified to date, but 
 
 **Creative and IP relationships** — a producer attached to a project, a writer under contract, a collaborator under a work-for-hire clause. The IP boundary event at project close is a governed crossing. The record is the legal anchor.
 
-**Care relationships** — a home health aide, personal assistant, or support worker. Informal, rarely documented, high-stakes at transition. The governed crossing provides the architecture for contemporaneous, tamper-evident records where no formal process currently exists.
+**Care relationships** — a home health aide, personal assistant, or support worker. Informal, rarely documented, high-stakes at transition. The governed crossing provides the architecture for contemporaneous, tamper-evident records where no formal process currently exists. Candidate status here is conditional on the grantor eligibility model (see Open Items): where the care recipient's capacity is compromised and no formal proxy exists, the eligible grantor is currently indeterminate, and the grant property's accountability anchor is unresolved for that sub-case.
 
 **Volunteer and civic roles** — board members, committee chairs, open-source maintainers. The knowledge transfer problem is structurally identical to employment. The formal process is thinner or absent. The governed crossing is the architectural response regardless of whether the relationship is compensated.
 
