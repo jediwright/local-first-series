@@ -100,7 +100,7 @@ The governance framework itself is documented at [governed-pr-framework](https:/
 
 ## Related Work
 
-The theoretical frame for this series — why local-first systems need a theory of the boundary, and what worker-side governance infrastructure for AI agents at employment boundaries requires — is developed in [Full Personhood: The Governance Model AI Requires and Capitalism Never Built](https://www.systemsofthought.com/).
+The theoretical frame for this series — why local-first systems need a theory of the boundary, and what worker-side governance infrastructure for AI agents at employment boundaries requires — is developed in [Full Personhood: The Governance Model AI Requires and Capitalism Never Built](https://www.systemsofthought.com/full-personhood-the-governance-model-ai-requires-and-capitalism-never-built/).
 
 | Repo | What it is |
 |---|---|
