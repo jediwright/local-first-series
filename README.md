@@ -39,6 +39,23 @@ The fifth entry is the first in the series where the specification preceded the 
 
 ---
 
+### Where the series points
+
+**The institution keeps its copy. So do you.**
+Person-side infrastructure for the records a life produces.
+
+The five entries above are probes into four life domains — labor,
+health, commerce, and personal communication. In several of these,
+people already hold legal rights to copies of their records; what
+doesn't exist is the receiving side — person-owned infrastructure that
+can accept, hold, verify, and re-present them. What's unproven is
+composition: records from different domains coexisting in one
+person-owned store under a common schema. That, not a fifth vertical,
+is the roadmap. Full direction at
+[seam-stack](https://github.com/jediwright/seam-stack).
+
+---
+
 ## Pattern Commons
 
 A root abstract pattern plus seven domain instantiations documented across the series. Each is designed as a reusable template — domain-agnostic, extractable, applicable beyond the prototype that first demonstrated it.
