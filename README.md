@@ -27,11 +27,11 @@ Status: early working idea. Full details coming soon.
 
 This is a sketch, not a finished specification. It describes a direction under active exploration, in plain terms. The detailed version is being revised and will be published here when it's ready.
 
-## The idea in one paragraph
+**The idea in one paragraph**
 
 Software that keeps your data on your own devices — "local-first" software — is getting good at storing, syncing, and protecting that data. What it doesn't yet have is a good answer for the moment your data has to leave: when you share a record with an employer, a doctor, a marketplace, or another person's system. Today, that moment of crossing is usually invisible — it just happens, with no record, no rules, and nothing to point to afterward. The crossing-layer framework is a proposal to make that moment a first-class, governed event.
 
-## What it would do
+**What it would do**
 
 Three commitments, in plain terms:
 
@@ -39,7 +39,7 @@ The record comes first. Before your data crosses a boundary, a durable record of
 No middleman required. Producing and verifying that record doesn't depend on a cloud service, a blockchain, or any central authority being reachable. The rules travel with the data.
 Evidence that outlives the moment. Each crossing produces a tamper-evident receipt that someone arriving later — an auditor, a counterpart, your future self — can check on its own, without access to anyone's private systems.
 
-## Where this stands
+**Where this stands**
 
 A working prototype has demonstrated the core of this on a real stack, with test evidence. The results so far are scoped to that one setup — no broader claims yet. The full design sketch, including how it relates to existing work in this space and the open questions still unresolved, is in revision and will be published in this directory.
 
