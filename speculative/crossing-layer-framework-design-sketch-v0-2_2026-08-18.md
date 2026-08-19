@@ -12,7 +12,7 @@ register-explainer README accompanying it in whatever directory hosts it.
 **Version:** v0.2 (v0.1 → v0.2 revision, post-collision-check)
 **Date:** 2026-08-18
 **Register:** CONTEXTUAL
-**Mode:** Speculative (green-sky) — feeds a future Mode 1 design/scoping session
+**Mode:** Speculative (blue-sky) — feeds a future Mode 1 design/scoping session
 **Ledger:** SL-0123 assigned at the v0.2 revision session close (Mode 1
 revision session, 2026-08-18), pending operator tail verification against the
 canonical Survival Ledger (expected tail at assignment: SL-0122). Speculative
