@@ -160,7 +160,7 @@ this sketch.
   hygiene; costs a second name to establish.
 
 **Constraint:** becomes one-way once the Full Personhood essay circulates to
-McGranaghan-tier reviewers with the current "pattern" language. If outreach
+frontier-tier reviewers with the current "pattern" language. If outreach
 proceeds before F-1 resolves, option (b) is the de facto default.
 **Owner:** operator decision, governed session, before any public framing
 change. **Not resolved by the v0.2 revision.**
