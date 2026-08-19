@@ -358,7 +358,7 @@ generality.)
 - **Full Personhood essay** — no language changes. The held items (R-1
   resolution session, footnote 23/24 fix) are unaffected and remain gates on
   wider circulation. F-1 adds a *soft* dependency: resolve naming before
-  McGranaghan outreach if feasible, since the essay's "pattern" language is
+  frontier reviewer outreach if feasible, since the essay's "pattern" language is
   what gets anchored in reviewers' heads.
 - **THEORY.md** — unchanged; merger-ready as-is. If F-1(a) is chosen,
   THEORY.md gets a queued amendment (queue-don't-reopen), not an edit.
