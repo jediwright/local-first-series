@@ -19,7 +19,7 @@ canonical Survival Ledger (expected tail at assignment: SL-0122). Speculative
 *content* herein remains non-verdict-bearing; the delta records the revision
 event and publication-candidate status, not the sketch's claims.
 **Lineage:** Session of 2026-08-18 ("could the Seam Stack extend the frameworks
-we're blocked by" → "could we mature what we have into a new external
+we're blocked by" → "explore ways to mature what we have into a new external
 foundational framework"). Prior art in-project:
 `substrate-crossing-seam-design-sketch_2026-08-17.md` (format precedent),
 `seam-stack_README.md`, PC#0 v0.1.1, PC#7 v0.5, PC#8 v0.1.4 + build plan v0.1,
