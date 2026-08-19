@@ -43,7 +43,8 @@ Evidence that outlives the moment. Each crossing produces a tamper-evident recei
 
 A working prototype has demonstrated the core of this on a real stack, with test evidence. The results so far are scoped to that one setup — no broader claims yet. The full design sketch, including how it relates to existing work in this space and the open questions still unresolved, is in revision and will be published in this directory.
 
-If you've found this early: the finished, reviewed versions of ideas from this project live in the Pattern Commons entries elsewhere in this repository. Everything in this directory is workshop material — read the README for what that means.
+If you've found this early: the finished, reviewed versions of ideas from this project live in the Pattern Commons entries elsewhere in this repository. Everything in this proposed framework is workshop material — read the README for what that means.
+
 ---
 
 ## The Prototypes
