@@ -825,12 +825,12 @@ session before promotion.
    divergences from the V2-F6 note (V2-F6c `regimeAcknowledgment`
    "person-authored" overclaim is the substantive item; (e) now
    covers three omissions including `crossingTimeoutHorizon`).
-2. **Prototype** — instrumented crossing against a live PDS; closing
+2. ~~**Prototype** — instrumented crossing against a live PDS; closing
    evidence for KL-1 and KL-2; gates CV-table promotion and any
-   NI-5 motion.
-3. **Prototype.** An instrumented crossing against a live PDS —
+   NI-5 motion.~~
+3. ~~**Prototype.** An instrumented crossing against a live PDS —
    the closing evidence for KL-1 and KL-2, and the event that would
-   make this entry's design claims testable rather than declared.
+   make this entry's design claims testable rather than declared.~~
 4. **Only after prototype evidence:** any Artifact B amendment, any
    NI-5 motion, any generality language. The employment-seam
    sequencing precedent governs.
