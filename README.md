@@ -21,6 +21,28 @@ The series demonstrates a four-layer architecture for local-first systems where 
 
 The synthesis claim: all four layers are required when boundary events carry legal and evidentiary weight, and they compose into a coherent architecture for local-first systems in those domains. None of the four layers is novel in isolation; the synthesis is the architectural composition.
 
+## The Crossing-Layer Framework — A Preview
+
+Status: early working idea. Full details coming soon.
+
+This is a sketch, not a finished specification. It describes a direction under active exploration, in plain terms. The detailed version is being revised and will be published here when it's ready.
+
+The idea in one paragraph
+
+Software that keeps your data on your own devices — "local-first" software — is getting good at storing, syncing, and protecting that data. What it doesn't yet have is a good answer for the moment your data has to leave: when you share a record with an employer, a doctor, a marketplace, or another person's system. Today, that moment of crossing is usually invisible — it just happens, with no record, no rules, and nothing to point to afterward. The crossing-layer framework is a proposal to make that moment a first-class, governed event.
+
+What it would do
+
+Three commitments, in plain terms:
+
+The record comes first. Before your data crosses a boundary, a durable record of the crossing is written — who, what, under which agreement. The record isn't an optional log added later; the crossing can't happen without it.
+No middleman required. Producing and verifying that record doesn't depend on a cloud service, a blockchain, or any central authority being reachable. The rules travel with the data.
+Evidence that outlives the moment. Each crossing produces a tamper-evident receipt that someone arriving later — an auditor, a counterpart, your future self — can check on its own, without access to anyone's private systems.
+Where this stands
+
+A working prototype has demonstrated the core of this on a real stack, with test evidence. The results so far are scoped to that one setup — no broader claims yet. The full design sketch, including how it relates to existing work in this space and the open questions still unresolved, is in revision and will be published in this directory.
+
+If you've found this early: the finished, reviewed versions of ideas from this project live in the Pattern Commons entries elsewhere in this repository. Everything in this directory is workshop material — read the README for what that means.
 ---
 
 ## The Prototypes
