@@ -23,7 +23,7 @@ The synthesis claim: all four layers are required when boundary events carry leg
 
 ## The Crossing-Layer Framework — A Preview
 
-Status: early working idea. Full details coming soon.
+Status: early working idea. [Read the speculative treatment here](https://github.com/jediwright/local-first-series/blob/main/speculative/crossing-layer-framework-design-sketch-v0-2_2026-08-18.md).
 
 This is a sketch, not a finished specification. It describes a direction under active exploration, in plain terms. The detailed version is being revised and will be published here when it's ready.
 
@@ -43,7 +43,7 @@ Evidence that outlives the moment. Each crossing produces a tamper-evident recei
 
 A working prototype has demonstrated the core of this on a real stack, with test evidence. The results so far are scoped to that one setup — no broader claims yet. The full design sketch, including how it relates to existing work in this space and the open questions still unresolved, is in revision and will be published in this directory.
 
-If you've found this early: the finished, reviewed versions of ideas from this project live in the Pattern Commons entries elsewhere in this repository. Everything in this proposed framework is workshop material — read the README for what that means.
+If you've found this early: the finished, reviewed versions of ideas from this project live in the Pattern Commons entries elsewhere in this repository. Everything in this proposed framework is workshop material — read its README for what that means.
 
 ---
 
