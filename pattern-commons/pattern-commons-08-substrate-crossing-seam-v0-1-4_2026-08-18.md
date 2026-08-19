@@ -2,7 +2,8 @@
 All claims produced across producer (v0.1) and Counter-Pass iterations 1–3
 (2026-08-17). Counter-Pass program complete — three iterations; all six
 resolutions survive narrowed; no design verdict overturned at any iteration.
-Four mechanical residuals from iteration 3 applied as v0.1.3. Form C
+Four mechanical residuals from iteration 3 applied as v0.1.3. Landscape Position section added
+as v0.1.4 (2026-08-18). Form C
 cluster PROPOSED per UFO Lexicon v1.8. All new vocabulary PROPOSED pending
 promotion. CONTEXTUAL register throughout. NI-5 in effect throughout.
 
@@ -10,8 +11,8 @@ promotion. CONTEXTUAL register throughout. NI-5 in effect throughout.
 
 # Pattern Commons #8 — The Substrate-Crossing Seam
 
-**Status:** Draft v0.1.3 — Counter-Pass program complete (3 iterations); design intent, prototype-pending
-**Date:** August 17, 2026
+**Status:** Draft v0.1.4 — Counter-Pass program complete (3 iterations); Landscape Position added; design intent, prototype-pending
+**Date:** August 18, 2026
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted
 **Derived from:** Substrate-crossing seam speculative design sketch,
 2026-08-17 (`substrate-crossing-seam-design-sketch_2026-08-17.md`);
@@ -517,6 +518,192 @@ difference but a topological one. (CP-F16.)
 
 ---
 
+### Landscape Position
+
+The category claim this entry makes — and the four criteria that define it —
+requires explicit differentiation from three adjacent systems. The collision
+check conducted 2026-08-18 (six sweeps; ADJACENT verdict; not an occupied
+category) identified these as the three flanks requiring rhetoric narrowing
+before any publication-track use of the claim.
+
+**The claim, narrowed:**
+
+There is an unoccupied category: substrate-neutral governed-crossing
+middleware. The four defining criteria are:
+
+**(i) Substrate-neutral via published conformance contract.** The framework
+rides on pluggable local-first/decentralized substrates via a published
+conformance contract — permitting substitution of any conformant substrate
+(Automerge, SQLite+CRDTs, AT Protocol repos, or equivalent) without modifying
+the crossing-governance layer itself — rather than targeting a specific
+substrate or managed cloud service.
+
+**(ii) Crossing as governed object with middleware-enforced write-before-fire
+ordering.** The framework treats the authorized boundary crossing as a
+first-class governed object. The durable crossing record is produced by the
+middleware as a precondition of the crossing — not as a logging side-effect
+placed on the application deployer to provide separately — and is distinct
+from systems that govern *unauthorized* crossings by preventing sync to
+unauthorized replicas, or systems that require the deployer to externally
+build and maintain the event log the policy engine then consumes.
+
+**(iii) No external finality arbiter in the crossing path.** The framework
+requires no external finality arbiter — specifically, no managed cloud
+service, no blockchain consensus, and no central authority that must be
+reachable for the crossing record to be produced or validated — distinguishing
+it from gateway-enforced systems where the policy evaluation service is itself
+a centralized dependency.
+
+**(iv) Tamper-evident post-hoc evidence envelope.** The framework ships a
+tamper-evident evidence envelope — a cryptographically bound, self-contained
+artifact per crossing event — legible to parties who arrive after the fact
+without requiring access to the middleware's internal log store or a live
+connection to any arbiter, and distinct from the authorization tokens (UCANs,
+Biscuits) that authorize the crossing but do not record that it occurred.
+
+---
+
+**Primary adjacency — AWS Dogwood (released August 6, 2026):**
+
+Dogwood is the most dangerous adjacency and requires front-loaded explicit
+differentiation. It introduces temporal conditions on sequences of prior
+tool-call events, requires a durable event log, and runs at a gateway that
+intercepts before effects fire. The surface-level description — "governed
+sequences of crossing events with a durable record required" — applies to
+both Dogwood and this entry. The differences are architectural and specific:
+
+- **(i) Substrate-locked.** Dogwood/Cedar is tied to Amazon Bedrock
+  AgentCore Gateway. The "substrate" is AWS infrastructure and MCP. There is
+  no published conformance contract for substituting Automerge, AT Protocol,
+  SQLite, or other local-first substrates.
+
+- **(ii) Log-consuming, not log-producing.** Dogwood is a policy language
+  that *consumes* a durable event log the deployer must supply. It explicitly
+  warns that "timestamps have to be trusted and events authenticated" and
+  "traces need durable storage" — requirements *placed on the deployer*, not
+  properties the framework guarantees. This entry's middleware *produces* the
+  crossing record as a precondition of the crossing; the write-before-fire
+  ordering is enforced by the middleware, not delegated to the deployer's
+  infrastructure.
+
+- **(iii) Managed arbiter required.** AgentCore Gateway is the centralized
+  arbiter. The reference interpreter is not production-ready; the only
+  production path runs through AWS infrastructure.
+
+- **(iv) No evidence envelope.** Dogwood specifies policy evaluation logic.
+  It makes no claim about cryptographic binding of crossing records or
+  post-hoc legibility for parties who arrive after the fact.
+
+The rhetoric narrowing on (ii) and (iii) must be explicit and prominent in
+any publication-track artifact that makes this claim. The substrate-lock on
+(i) is the current most visible differentiator but has the shortest shelf
+life: Dogwood's published roadmap includes planned work on additional temporal
+operators, and a third-party implementation against a different substrate is
+possible. The (ii) and (iii) distinctions are architectural and survive a
+future Dogwood substrate extension.
+
+**Empirical note (as of 2026-08-18):** KL-1 and KL-2 have converted from
+prototype-pending to closing evidence (PC#8 Phase 2 joint conversion event,
+SL-0121). The claim is no longer spec-vs-spec against Dogwood; it is
+prototype-evidence vs. spec. Dogwood has no published prototype evidence of
+middleware-enforced write-before-fire ordering. This asymmetry is real and
+should be maintained in any comparative framing.
+
+---
+
+**Secondary adjacency — Keyhive/Beelay (Ink & Switch):**
+
+Keyhive is the local-first community's most serious access-control work and
+shares criterion (iii) (coordination-free, arbiter-free). The distinction is
+architectural and precise: Keyhive governs *who may cross* by preventing
+unauthorized synchronization; this entry governs *authorized crossings* as
+first-class objects with pre-committed evidence. In Keyhive, an unauthorized
+crossing is prevented; an authorized crossing fires without a pre-committed
+record of the crossing event, a declared exposure position, or an evidence
+envelope for parties who arrive after the fact. The distinction in one
+sentence: **Keyhive gate-on-sync; this entry govern-the-crossing.**
+
+Jake Lazaroff's LFC Berlin 2026 talk ("Building More Resilient Local-First
+Software with atproto," Day 1) names the gap this entry addresses. His
+implementation crosses from Automerge-style CRDTs into AT Protocol using the
+Jetstream for real-time sync. He explicitly defers the data-exposure problem:
+all data is public, private data "floating out there in the PDS" is
+acknowledged as uneasy, and the proper solution is to "wait for atproto to
+support private and shared private data." The crossing fires without a
+pre-committed record, a declared exposure position, or a governed
+acknowledgment of the regime change. This is the gap; his own characterization
+of it is citable.
+
+---
+
+**Tertiary adjacency — Denis et al. 2024 (DIFC for distributed systems):**
+
+Denis, Arnaud, and colleagues (Computers & Security 144, 2024,
+DOI 10.1016/j.cose.2024.103975) propose a decentralized information-flow
+control mechanism for distributed systems using events as the unit of IFC,
+without a central authority. This is the closest academic precedent in the
+IFC line. A skeptical reviewer with an IFC background will cite it; the
+distinguishability argument must appear explicitly.
+
+The distinction: Denis et al. present a theoretical model for label-propagation
+IFC at the event level in a decentralized system. This entry addresses
+*explicitly authorized* boundary crossings — intentional, governed acts where
+one party moves a record across a declared substrate boundary with the
+acknowledgment of the epistemic-regime change — with a durable pre-committed
+evidence envelope legible to parties who arrive after the fact. Denis et al.
+govern *implicit* information-flow confidentiality and integrity within a
+unified computation model; this entry governs *explicit* authorized crossings
+with an audit trail for third parties. Denis et al. is a deployed-nowhere
+theoretical model; this entry has prototype evidence on a live stack (PC#8
+Phase 2 joint conversion, SL-0121).
+
+---
+
+**The IFC tradition as a class:**
+
+The broader IFC tradition (Jif/Myers, LIO/Russo, FlowCaml, Troupe, Cocoon,
+Carapace) is distinguishable as a class: it enforces label-propagation
+noninterference at compile time or within a single runtime, rather than
+governing explicitly authorized boundary crossings with durable
+pre-committed evidence artifacts. The compile-time/label-propagation vs.
+runtime/crossing-record distinction is the load-bearing differentiator. Jif
+prevents *accidental* flow violations at compile time; this entry governs
+*intentional* authorized crossings at runtime with auditability for parties
+who arrive after the fact.
+
+---
+
+**TCP/TLS analogy (hygiene note):**
+
+The framing "Keyhive is to this framework what TCP is to TLS" — used in the
+crossing-layer framework design sketch (2026-08-18, speculative register) —
+does not appear to be claimed in the target domain as of August 2026. The
+collision check's Sweep 6 found no competing use of the TCP/TLS layering
+analogy for a middleware category claim in the authorization/local-first/
+decentralized space. Risk is assessed as LOW but not ZERO: Local-First Conf
+Berlin 2026 content has now been swept in full (this session, 2026-08-18),
+and no competing claim was found across the complete schedule (Day 1, Day 2,
+Lab Day). The analogy may be used in speculative-register drafting; it
+requires a final collision check before any publication-track use.
+
+---
+
+**LFC Berlin 2026 sweep status (residual risk: CLOSED):**
+
+The collision check's single largest unresolved residual risk — Local-First
+Conf 2026 talk content not yet indexed — has been closed by direct schedule
+fetch and targeted talk reads (this session, 2026-08-18). Full three-day
+schedule retrieved (Day 1: July 12; Day 2: July 13; Lab Day: July 14). No
+talk across any day claims substrate-neutral governed-crossing middleware,
+write-before-fire ordering, or tamper-evident crossing evidence envelopes.
+Jake Lazaroff's Day 1 talk (full text read) names the gap and defers it.
+Paul Frazee's Day 2 talk ("Solving for Scale in Open Networks") addresses
+atproto's authenticated-transfer scaling architecture — upstream
+infrastructure, not crossing governance. The data-ownership panel (Day 1)
+produced no competing middleware claim. Residual risk assessed CLOSED.
+
+---
+
 ## Known Limits — KL-1 through KL-12
 
 This is the entry's core section. Each limit names what cannot be
@@ -652,6 +839,15 @@ session before promotion.
 
 ## Changelog
 
+**v0.1.4 (2026-08-18).** Landscape Position section added (new §, inserted
+after "How It Sits in the Series"). Source: collision check
+`collision_check_substrate_neutral_governed_crossing.md` (2026-08-18, six
+sweeps, ADJACENT verdict) and LFC Berlin 2026 full schedule sweep (this
+date). Content: four criteria narrowed with explicit Dogwood, Keyhive, and
+Denis et al. differentiation language; Lazaroff gap-naming cited; LFC
+residual risk closed. No vocabulary modified. No Known Limits opened or
+closed. No existing text modified. Ledger: SL-0122.
+
 **v0.1.3 (2026-08-17).** Counter-Pass program closed at iteration-3
 ceiling. Mechanical residuals applied: V3-F1 (epistemic-position
 bullet updated to program-complete); V3-F2 (`crossingTimeoutHorizon`
@@ -712,4 +908,4 @@ Lexicon v1.8. All new vocabulary PROPOSED pending promotion. NI-5: local-first
 specific on current evidence — zero generality claims in this entry.*
 *Delivery-not-application enforced. Canonical files on operator's machine.*
 
-*UX Minds, LLC · J. Wright · August 17, 2026*
+*UX Minds, LLC · J. Wright · August 18, 2026*
