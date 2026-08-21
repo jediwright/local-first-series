@@ -11,7 +11,7 @@ promotion. CONTEXTUAL register throughout. NI-5 in effect throughout.
 
 # Pattern Commons #8 — The Substrate-Crossing Seam
 
-**Status:** Draft v0.1.4 — Counter-Pass program complete (3 iterations); Landscape Position added; design intent, prototype-pending
+**Status:** Draft v0.1.4 — Counter-Pass program complete (3 iterations); Phases 0–2 complete; 27/27 tests passing
 **Date:** August 18, 2026
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted
 **Derived from:** Substrate-crossing seam speculative design sketch,
