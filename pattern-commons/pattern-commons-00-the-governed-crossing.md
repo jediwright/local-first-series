@@ -1,10 +1,10 @@
 # Pattern Commons #0 — The Governed Crossing
 
-**Status:** v0.1.1 — Counter-Pass applied 2026-08-10 (SL-0072): R1 narrowed (#4 reclassified as infrastructure); R2 care-domain candidacy conditioned on open grantor eligibility model; R3 (a) — altitude/Artifact B distinction holds (Item 1 §1.1 is a standalone Form C document, not inside Artifact B).
-**Date:** August 10, 2026
+**Status:** v0.1.2 — Conformance and canonical status section added (2026-08-20); v0.1.1 — Counter-Pass applied 2026-08-10 (SL-0072): R1 narrowed (#4 reclassified as infrastructure); R2 care-domain candidacy conditioned on open grantor eligibility model; R3 (a) — altitude/Artifact B distinction holds (Item 1 §1.1 is a standalone Form C document, not inside Artifact B).
+**Date:** August 20, 2026
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted
 **Series:** Local-first prototype series — Pattern Commons
-**Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam
+**Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam · #8 substrate-crossing seam
 **Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2)
 **Stamps:** CONTEXTUAL register. Form C cluster PROPOSED per UFO Lexicon v1.5. NI-5 in effect throughout. Counter-Pass complete (SL-0072, 2026-08-10).
 
@@ -25,6 +25,25 @@ The series has demonstrated the governed crossing across commerce (one seam per 
 This document does that.
 
 The employment seam (Pattern Commons #7) is the entry where the pattern became fully visible — where all four Seam Stack layers became necessary at once, where the legal and evidentiary stakes forced the architecture into explicit view, and where the generalization became unavoidable. Pattern Commons #0 is not a retroactive reframe of #7. It is the document #7 implied and that the architecture had been building toward.
+
+---
+
+## Conformance and Canonical Status
+
+**Implementing this pattern produces a fully valid governed crossing. No canonical entry number is required.**
+
+The Pattern Commons is an open architectural pattern, not a permissioned registry. Any system that satisfies the four constitutive properties below and conforms to the `seam:CrossingRecord` base shape is a governed crossing — in production, with full architectural validity, regardless of whether it has been submitted for canonical review or assigned a PC#N number.
+
+Canonical entry numbers (PC#7, PC#8, and so on) represent evidence-gated reference classifications in the core taxonomy index. They are a documentation layer above the pattern, not an implementation gate below it. The canon exists to make cross-domain generalization claims; your implementation does not need to make that claim to be real.
+
+| Dimension | Implementing the pattern | Contributing to the canon (PC#N) |
+|---|---|---|
+| Scope | Domain-specific boundary crossings in your own system | Reusable, cross-cutting entries in the core taxonomy |
+| Requirements | Four constitutive properties + `seam:CrossingRecord` conformance | Prototype evidence, operational proof, formal blast-radius review |
+| Validation | Schema conformance and runtime execution at your seam | Evidence-gated integration into the taxonomy index |
+| Permission gate | None. Build today without approval. | Governance-gated via the evidence review framework |
+
+Build against this specification freely. The `seam:CrossingRecord` vocabulary namespace (`https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#`) and the four-layer Seam Stack architecture are the contract. Both are available now.
 
 ---
 
@@ -120,6 +139,7 @@ The prior Pattern Commons domain entries (#1–#3, #5–#7) are instantiations o
 | #5 — Distributed seam | Social networking | Peer handshake; relay exits after sync | Distributed; relay-exits posture demonstrated |
 | #6 — CRDT as trust graph | Social | Trust assignment at connection | Graph-structural; trust as local-first state |
 | #7 — Employment seam | Labor / legal | Any state change in a working relationship | Legal and evidentiary; all four Seam Stack layers required; full participant model |
+| #8 — Substrate-crossing seam | Public substrate | Publication from local-first substrate to globally indexed regime | Epistemic regime change; exposure-unbounded; Phases 0–2 complete |
 
 The employment seam (#7) is the most demanding instantiation — the one where the failure taxonomy is deepest, the participant model is most complex, and the legal substrate is part of the architecture rather than a wrapper around it. It is not the definition of the class. It is the proof that the class exists and that the architecture is sufficient to handle the hardest case.
 
@@ -208,6 +228,8 @@ NI-5 applies: these claims are local-first-specific on current evidence. No subs
 
 **Domain-specific failure taxonomies.** Pattern Commons #0 does not specify failure states. Each domain instantiation carries its own failure taxonomy. A general failure taxonomy for the governed crossing class is a future derivation item, not a current known limit — it has not been attempted.
 
+**Inter-seam composition.** Pattern-conformant implementations in different domains — a healthcare seam and a housing seam, for example — both produce valid governed crossings, but their schemas do not automatically compose across domains. The inter-seam layer (cross-domain record composition under a shared identity anchor) is the next unspecified architectural tier. Builders implementing the pattern today should expect this layer to evolve above them.
+
 ---
 
 ## How This Sits in the Series
@@ -241,4 +263,4 @@ Open items for future sessions:
 
 *The governed crossing pattern and the Seam Stack are documented at [seamstack.org](https://seamstack.org). The governing manifesto-spec is Artifact B — Form C (r2), available in the local-first-series repository.*
 
-*UX Minds, LLC · J. Wright · August 10, 2026*
+*UX Minds, LLC · J. Wright · August 20, 2026*
