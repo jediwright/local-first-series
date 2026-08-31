@@ -6,38 +6,35 @@ Four mechanical residuals from iteration 3 applied as v0.1.3. Landscape Position
 as v0.1.4 (2026-08-18). Form C
 cluster PROPOSED per UFO Lexicon v1.8. All new vocabulary PROPOSED pending
 promotion. CONTEXTUAL register throughout. NI-5 in effect throughout.
-v0.2 (2026-08-30): narrow absorption of Phase 3 as-implemented terms
-(UFO Lexicon v2.5) under manifest r7; rebased onto v0.1.4 (F-B3);
-single context, no Counter-Pass. Prototype-status prose in this entry
-is KNOWN-STALE and queued for v0.3 (F-B2) — see Status line and Changelog.
+v0.2 (2026-08-30): Phase 3 as-implemented terms absorbed; rebased onto v0.1.4.
 
 ---
 
 # Pattern Commons #8 — The Substrate-Crossing Seam
 
-**Status:** Draft v0.2 — Phase 3 as-implemented terms absorbed (UFO Lexicon v2.5 L4; registered `crossingGrantHorizon`; KL-12 candidate renamed). Supersedes v0.1.4's "Phases 0–2 complete; 27/27": Phase 3 (Items 3.1–3.3, Runs 6–8) is CLOSED and VERIFIED at `fb05ea1`. **Narrow revision:** the following surfaces are **known-stale** and deliberately *not* revised here — KL-1/KL-2/KL-8/KL-10 rows (Landscape Position already cites SL-0121 as KL-1/KL-2 closing evidence; the rows do not), Vocabulary Queue ("pending v1.8"; `crossingTimeoutHorizon` host listed open — resolved KL-8c/SL-0114), header references to Artifact B r2.4 and NI-5 "in effect", and the How It Sits in the Series comparison table's PC#8 evidence-status cell ("Design intent — prototype-pending"; the Landscape Position section is carried unchanged from v0.1.4). Queued for a v0.3 post-prototype revision opened against the ledger and observation log directly (F-B2, manifest r7). Read those surfaces as v0.1.4 record, not current state.
-**Date:** August 30, 2026 (v0.2) · August 18, 2026 (v0.1.4)
-**Author:** J. Wright (UX Minds, LLC) · AI-assisted
-**Derived from:** Substrate-crossing seam speculative design sketch,
-2026-08-17 (`substrate-crossing-seam-design-sketch_2026-08-17.md`);
-OQ-5 operator decision, 2026-08-17; fact-base corrections web-verified
-2026-08-17.
-**Series:** Local-first prototype series — Pattern Commons
-**Parent pattern:** Pattern Commons #0 — The Governed Crossing (v0.1.1)
-**Companion entries:** #1 checkout seam · #2 high-stakes seam ·
-#3 profile map as local CRM · #4 attachArrayObserver (infrastructure) ·
-#5 distributed seam · #6 CRDT as trust graph · #7 employment seam
-**Governing architecture:** Artifact B — Form C Standalone Framework
-Manifesto-Spec (r2.4). This entry does not amend Artifact B and makes
-no claim on its behalf.
-**Base shape:** `seam:CrossingRecord`
-(`https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#`)
-**Stamps:** ⚑ SINGLE-CONTEXT — NOT PANELED. All confidence ~ unless
-otherwise marked. Ledger: SL-0105 (issuance); SL-0106 (Lexicon v1.8);
-SL-0107 (CP iter 1); SL-0108–SL-0109 (CP iter 2); SL-0110–SL-0112
-(CP iter 3 / program close); SL-0122 (v0.1.4 Landscape Position);
-SL-0190 / SL-0191 validation events fire at v0.2 (Lexicon v2.5 L4
-absorption; reconciliation routed lines).
+**Status:** Draft v0.2.1 — Phase 3 as-implemented terms absorbed (UFO Lexicon v2.5). Phase 3 closed and verified at `fb05ea1`. Some sections still describe the prototype as pending; a post-prototype revision (v0.3) is queued — see Changelog.  
+**Date:** August 30, 2026 (v0.2) · August 18, 2026 (v0.1.4)  
+**Author:** J. Wright (UX Minds, LLC) · AI-assisted  
+**Derived from:** Substrate-crossing seam speculative design sketch,  
+2026-08-17 (`substrate-crossing-seam-design-sketch_2026-08-17.md`);  
+OQ-5 operator decision, 2026-08-17; fact-base corrections web-verified  
+2026-08-17.  
+**Series:** Local-first prototype series — Pattern Commons  
+**Parent pattern:** Pattern Commons #0 — The Governed Crossing (v0.1.1)  
+**Companion entries:** #1 checkout seam · #2 high-stakes seam ·  
+#3 profile map as local CRM · #4 attachArrayObserver (infrastructure) ·  
+#5 distributed seam · #6 CRDT as trust graph · #7 employment seam  
+**Governing architecture:** Artifact B — Form C Standalone Framework  
+Manifesto-Spec (r2.4). This entry does not amend Artifact B and makes  
+no claim on its behalf.  
+**Base shape:** `seam:CrossingRecord`  
+(`https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#`)  
+**Stamps:** ⚑ SINGLE-CONTEXT — NOT PANELED. All confidence ~ unless  
+otherwise marked. Ledger: SL-0105 (issuance); SL-0106 (Lexicon v1.8);  
+SL-0107 (CP iter 1); SL-0108–SL-0109 (CP iter 2); SL-0110–SL-0112  
+(CP iter 3 / program close); SL-0122 (v0.1.4 Landscape Position);  
+SL-0190 / SL-0191 validation events fire at v0.2 (Lexicon v2.5 L4  
+absorption; reconciliation routed lines).  
 
 ---
 
@@ -866,6 +863,8 @@ session before promotion.
 
 ## Changelog
 
+**v0.2.1 (2026-08-30).** Header only; no content change. Status line reduced to reader-facing text — the revision inventory it carried now lives solely in the v0.2 changelog entry below, where a v0.3 revision reads it. Stamp-block v0.2 sentence shortened. Hard line breaks (trailing spaces) added to the header metadata lines so Status, Date, Author, and the rest render as separate lines rather than one paragraph (whitespace-only; affects v0.1.4-era lines). Series-wide question of governance metadata in public headers deferred to v0.3 / PC#00.
+
 **v0.2 (2026-08-30).** Narrow post-Phase-3 absorption under manifest r7 (Mode 1, single context, no Counter-Pass). **Rebased onto v0.1.4 (F-B3); Landscape Position section carried unchanged.** (1) New section *Phase 3 As-Implemented Terms* absorbing the UFO Lexicon v2.5 L4 PROPOSED cluster — assembly document (D-5), payload-provenance rule (F-3.3-1), block-vs-fault principle (Q2) — and recording **`crossingGrantHorizon` as REGISTERED (v2.5 L2), not PROPOSED**: it enters this entry with registered status, the only such term in the new section. (2) KL-12 row: candidate field renamed `grantAuthorityHorizon` (v2.5 L2; rename recorded as a divergence from build-plan §KL-8c naming), host-object line corrected (F-3.2-3), disambiguated from the registered not-before field, status marked NOT closed (L1). (3) Reconciliation lines 6 and 18b absorbed as candidate text, PROPOSED — promotion to design-prose register deferred to v0.3 (a narrowing; SL-0191 → SURVIVED, narrowed). (4) SL-0190 validation event (a) fires: L4 cluster absorbed; Lexicon v2.6 promotion remains gated on this entry being read against v2.5. Status line supersedes v0.1.4's "Phases 0–2 complete; 27/27" with the Phase 3 close at `fb05ea1`. **Scoping correction (F-B1):** the r6.1-era phrase "correct Item 3.2 bullet 2 per D-2" named a Phase 3 *spec* §3 item, discharged in spec r2 and not present in this entry; the D-2 consequence for this entry is the `crossingGrantHorizon` registration above. **Deliberately not revised (F-B2, inventory corrected against v0.1.4):** KL-1/KL-2/KL-8/KL-10 rows (Landscape Position cites SL-0121 as KL-1/KL-2 closing evidence; the rows do not), Vocabulary Queue ("pending v1.8"; `crossingTimeoutHorizon` host listed open — resolved KL-8c/SL-0114), What Comes Next items 1 and 4, header references to Artifact B r2.4 and NI-5 "in effect", How It Sits in the Series table PC#8 evidence-status cell ("Design intent — prototype-pending"); repo-side: root README.md "Design intent, prototype-pending" line — all known-stale, queued for v0.3 with ledger + observation log attached. No design verdict modified.
 
 **v0.1.4 (2026-08-18).** Landscape Position section added (new §, inserted
@@ -941,4 +940,4 @@ Prototype-status prose known-stale, queued for v0.3 (F-B2, manifest r7).
 Ledger: SL-0122 carried; SL-0190 / SL-0191 validation events.*
 *Delivery-not-application enforced. Canonical files on operator's machine.*
 
-*UX Minds, LLC · J. Wright · August 18, 2026 · v0.2 August 30, 2026*
+*UX Minds, LLC · J. Wright · August 18, 2026 · v0.2 / v0.2.1 August 30, 2026*
