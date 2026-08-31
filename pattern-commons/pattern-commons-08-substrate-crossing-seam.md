@@ -1,11 +1,6 @@
 ⚑ STAMP: SINGLE-CONTEXT — NOT PANELED
-All claims produced across producer (v0.1) and Counter-Pass iterations 1–3
-(2026-08-17). Counter-Pass program complete — three iterations; all six
-resolutions survive narrowed; no design verdict overturned at any iteration.
-Four mechanical residuals from iteration 3 applied as v0.1.3. Landscape Position section added
-as v0.1.4 (2026-08-18). Form C
-cluster PROPOSED per UFO Lexicon v1.8. All new vocabulary PROPOSED pending
-promotion. CONTEXTUAL register throughout. NI-5 in effect throughout.
+All claims produced across producer (v0.1) and Counter-Pass iterations 1–3 (2026-08-17). Counter-Pass program complete — three iterations; all six resolutions survive narrowed; no design verdict overturned at any iteration.
+Four mechanical residuals from iteration 3 applied as v0.1.3. Landscape Position section added as v0.1.4 (2026-08-18). Form C cluster PROPOSED per UFO Lexicon v1.8. All new vocabulary PROPOSED pending promotion. CONTEXTUAL register throughout. NI-5 in effect throughout.
 v0.2 (2026-08-30): Phase 3 as-implemented terms absorbed; rebased onto v0.1.4.
 
 ---
@@ -15,26 +10,13 @@ v0.2 (2026-08-30): Phase 3 as-implemented terms absorbed; rebased onto v0.1.4.
 **Status:** Draft v0.2.1 — Phase 3 as-implemented terms absorbed (UFO Lexicon v2.5). Phase 3 closed and verified at `fb05ea1`. Some sections still describe the prototype as pending; a post-prototype revision (v0.3) is queued — see Changelog.  
 **Date:** August 30, 2026 (v0.2) · August 18, 2026 (v0.1.4)  
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted  
-**Derived from:** Substrate-crossing seam speculative design sketch,  
-2026-08-17 (`substrate-crossing-seam-design-sketch_2026-08-17.md`);  
-OQ-5 operator decision, 2026-08-17; fact-base corrections web-verified  
-2026-08-17.  
+**Derived from:** Substrate-crossing seam speculative design sketch, 2026-08-17 (`substrate-crossing-seam-design-sketch_2026-08-17.md`); OQ-5 operator decision, 2026-08-17; fact-base corrections web-verified 2026-08-17.  
 **Series:** Local-first prototype series — Pattern Commons  
 **Parent pattern:** Pattern Commons #0 — The Governed Crossing (v0.1.1)  
-**Companion entries:** #1 checkout seam · #2 high-stakes seam ·  
-#3 profile map as local CRM · #4 attachArrayObserver (infrastructure) ·  
-#5 distributed seam · #6 CRDT as trust graph · #7 employment seam  
-**Governing architecture:** Artifact B — Form C Standalone Framework  
-Manifesto-Spec (r2.4). This entry does not amend Artifact B and makes  
-no claim on its behalf.  
-**Base shape:** `seam:CrossingRecord`  
-(`https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#`)  
-**Stamps:** ⚑ SINGLE-CONTEXT — NOT PANELED. All confidence ~ unless  
-otherwise marked. Ledger: SL-0105 (issuance); SL-0106 (Lexicon v1.8);  
-SL-0107 (CP iter 1); SL-0108–SL-0109 (CP iter 2); SL-0110–SL-0112  
-(CP iter 3 / program close); SL-0122 (v0.1.4 Landscape Position);  
-SL-0190 / SL-0191 validation events fire at v0.2 (Lexicon v2.5 L4  
-absorption; reconciliation routed lines).  
+**Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver (infrastructure) · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam  
+**Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2.4). This entry does not amend Artifact B and makes no claim on its behalf.  
+**Base shape:** `seam:CrossingRecord` (`https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#`)  
+**Stamps:** ⚑ SINGLE-CONTEXT — NOT PANELED. All confidence ~ unless otherwise marked. Ledger: SL-0105 (issuance); SL-0106 (Lexicon v1.8); SL-0107 (CP iter 1); SL-0108–SL-0109 (CP iter 2); SL-0110–SL-0112 (CP iter 3 / program close); SL-0122 (v0.1.4 Landscape Position); SL-0190 / SL-0191 validation events fire at v0.2 (Lexicon v2.5 L4 absorption; reconciliation routed lines).  
 
 ---
 
