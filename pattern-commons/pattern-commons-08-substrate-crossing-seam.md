@@ -6,13 +6,17 @@ Four mechanical residuals from iteration 3 applied as v0.1.3. Landscape Position
 as v0.1.4 (2026-08-18). Form C
 cluster PROPOSED per UFO Lexicon v1.8. All new vocabulary PROPOSED pending
 promotion. CONTEXTUAL register throughout. NI-5 in effect throughout.
+v0.2 (2026-08-30): narrow absorption of Phase 3 as-implemented terms
+(UFO Lexicon v2.5) under manifest r7; rebased onto v0.1.4 (F-B3);
+single context, no Counter-Pass. Prototype-status prose in this entry
+is KNOWN-STALE and queued for v0.3 (F-B2) — see Status line and Changelog.
 
 ---
 
 # Pattern Commons #8 — The Substrate-Crossing Seam
 
-**Status:** Draft v0.1.4 — Counter-Pass program complete (3 iterations); Phases 0–2 complete; 27/27 tests passing
-**Date:** August 18, 2026
+**Status:** Draft v0.2 — Phase 3 as-implemented terms absorbed (UFO Lexicon v2.5 L4; registered `crossingGrantHorizon`; KL-12 candidate renamed). Supersedes v0.1.4's "Phases 0–2 complete; 27/27": Phase 3 (Items 3.1–3.3, Runs 6–8) is CLOSED and VERIFIED at `fb05ea1`. **Narrow revision:** the following surfaces are **known-stale** and deliberately *not* revised here — KL-1/KL-2/KL-8/KL-10 rows (Landscape Position already cites SL-0121 as KL-1/KL-2 closing evidence; the rows do not), Vocabulary Queue ("pending v1.8"; `crossingTimeoutHorizon` host listed open — resolved KL-8c/SL-0114), header references to Artifact B r2.4 and NI-5 "in effect", and the How It Sits in the Series comparison table's PC#8 evidence-status cell ("Design intent — prototype-pending"; the Landscape Position section is carried unchanged from v0.1.4). Queued for a v0.3 post-prototype revision opened against the ledger and observation log directly (F-B2, manifest r7). Read those surfaces as v0.1.4 record, not current state.
+**Date:** August 30, 2026 (v0.2) · August 18, 2026 (v0.1.4)
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted
 **Derived from:** Substrate-crossing seam speculative design sketch,
 2026-08-17 (`substrate-crossing-seam-design-sketch_2026-08-17.md`);
@@ -31,7 +35,9 @@ no claim on its behalf.
 **Stamps:** ⚑ SINGLE-CONTEXT — NOT PANELED. All confidence ~ unless
 otherwise marked. Ledger: SL-0105 (issuance); SL-0106 (Lexicon v1.8);
 SL-0107 (CP iter 1); SL-0108–SL-0109 (CP iter 2); SL-0110–SL-0112
-(CP iter 3 / program close).
+(CP iter 3 / program close); SL-0122 (v0.1.4 Landscape Position);
+SL-0190 / SL-0191 validation events fire at v0.2 (Lexicon v2.5 L4
+absorption; reconciliation routed lines).
 
 ---
 
@@ -724,7 +730,7 @@ survives contact.
 | **KL-9** | Enforceability of the record-before-crossing ordering under Q6: the discipline is `author-declared` until `timestamp-signed` infrastructure unlocks; nothing structurally prevents backdating an intent record | Signed-timestamp infrastructure (already named as locked in the crossing-record vocabulary); `timestamp-signed` anchor type is the converting event |
 | **KL-10** | The check-to-fire window (TOCTOU): a revocation landing between gate check and publish fires is checked-then-crossed at an irreversible boundary; the window cannot be eliminated under the finality-arbiter-free constraint | Prototype instrumentation of the window duration; cannot be closed, only bounded in-evidence; `emittedAt` on the intent record bounds it for deferred parties |
 | **KL-11** | Gate reach over derived content: content derived from governed records (paraphrase, screenshot, re-publication outside the governed stack) crosses no boundary the gate can detect; the trigger is narrowed to architecture-mediated records and exports, but the residual surface is a permanent limit | None fully — P8 honesty requires naming this as permanently out-of-reach; the narrow trigger is the correct posture |
-| **KL-12** | `recallSemantics` staleness: target-substrate deletion semantics can change between grant time and act time (protocol revisions, PDS policy); a standing grant could declare `propagated-request` and have that become inaccurate before the publish fires | Design candidate: gate re-asserts declared value at act time; grant carries a grant-side validity-horizon field (not `evidenceDecay`, which is a `seam:CrossingRecord` base-shape field not applicable to the grant object — V2-F5); prototype confirms |
+| **KL-12** | `recallSemantics` staleness: target-substrate deletion semantics can change between grant time and act time (protocol revisions, PDS policy); a standing grant could declare `propagated-request` and have that become inaccurate before the publish fires | Design candidate: gate re-asserts declared value at act time; a grant-side validity-horizon field **`grantAuthorityHorizon`** (PROPOSED; renamed at Lexicon v2.5 L2 — formerly the `crossingGrantHorizon` candidate) declares the horizon after which the grant's authority to initiate a crossing *lapses* (a not-after on authority scope; not `evidenceDecay`, a `seam:CrossingRecord` base-shape field not applicable to the grant object — V2-F5). **Host object (corrected v2.5, F-3.2-3):** the grant, where the grant object carries fields; on the current stack Keyhive `Access` is field-less, so the intent record is the only available host — a stack question, not settled by the lexicon. **Not to be confused with the registered `crossingGrantHorizon`** (not-before horizon on the intent record, D-2 — see Phase 3 As-Implemented Terms). **Status at v0.2:** NOT closed — Runs 7–8 exercised a seam-hosted not-before gate and a no-horizon control; grant-authority lapse was not exercised (Lexicon v2.5 L1). Closing evidence: a governed run in which grant authority lapses and the gate refuses on that ground |
 
 ---
 
@@ -743,6 +749,27 @@ survives contact.
   becomes evidence when a prototype exists, not when a spec is
   written. That attachment is earned by the prototype, not declared
   by this entry.
+
+---
+
+## Phase 3 As-Implemented Terms — PROPOSED (one registered field)
+
+*Added v0.2 (2026-08-30). Source: UFO Lexicon v2.5 (rulings L2–L4, SL-0190); decision records D-2, D-3, D-5, D-7; CONVENTIONS v0.4 at `fb05ea1`; reconciliation record 2026-08-30 (routed lines 6, 18b; SL-0191). The **Vocabulary Queue below predates the Lexicon v2.3 promotion of this entry's original cluster and is known-stale; see F-B2 / v0.3.** Nothing in this section amends the Grant Model, Gate, Two-Record Pattern, or Landscape Position prose above, which remains as issued at v0.1.4; promotion of any term here into that prose is v0.3 work.*
+
+These terms name what the Phase 3 build (Items 3.1–3.3, Runs 6–8) implemented. They are recorded here because this entry is the register home the Lexicon names for them; their promotion in the Lexicon (v2.6) is gated on this absorption being read against v2.5, not on this session alone.
+
+**`crossingGrantHorizon`** *(REGISTERED — Lexicon v2.5 L2; the only registered term in this section)* — an optional *not-before* horizon hosted on the `crossing-intent` record beside `crossingTimeoutHorizon`; the gate checks it from the system clock at mint, fresh on every attempt, never cached; a pre-horizon attempt mints no record (D-2). Seam-level, not grant-level. Sense of "grant" in the name (L3): the earliest-effective time of the authorization, not the host object — the two intent-record horizons differ in meaning (earliest-authorized vs latest-before-unconfirmed), not in host. Consistency rule (D-7): `crossingGrantHorizon ≥ crossingTimeoutHorizon` never mints and is refused explicitly (`horizon-inconsistent`, both values logged), never clamped or reordered. Registered on build-validation grounds (Runs 7–8). **It is not KL-12 closing evidence** and not the `grantAuthorityHorizon` lapse candidate (KL-12 row). AppView note (L5): horizon compliance is legible only from the intent record; an AppView may display a record pre-embargo.
+
+**assembly document** *(PROPOSED — D-5)* — the single seam-owned Automerge document a crossing actor assembles from granted input documents, in a fixed aggregation order; the object every crossing goes through, single-source included (one code path in `initiateCrossing()`). Hosts the `crossingRecords` and `completionRecords` arrays; `sourceDocumentURI` / `sourceDocumentCID` name it (CID = its heads at mint); `sourceLineage` lists the granted inputs; `authorizedContentDigest` (D-3) is computed over its content object. Runs 1–5 evidence was minted under the singular shape and is never retrofitted.
+
+**payload-provenance rule** *(PROPOSED — F-3.3-1)* — the published record's content object is built from the assembled content the seam hash-checked at mint, never from an independent fixture or a separately constructed object. From `fb05ea1` this is enforced by the fire wrapper (fire-time re-verification, Item 3.3) and asserted by the e2e test on the bytes actually published. Origin: an Item 1.2-era fixture published a payload divergent from its authorized content, masked until fire-time verification existed (fixture-only; no live record affected). Candidate general seam principle: *a seam publishes only what its own intent record describes.* General-principle home if promoted: Pattern Commons #00 amendment.
+
+**block-vs-fault principle** *(PROPOSED — Item 3.3 ruling Q2)* — a *block* is a gate outcome on an external condition detected (the document changed under the seam; an expired or not-yet-reached horizon; a digest mismatch at mint): a loggable event, nothing written or nothing fired, the evidence posture preserved (`crossing-unconfirmed` derivable). A *seam fault* is the seam breaking its own invariant on bytes it just wrote (the step-4 recompute inequality): thrown, not logged as a gate outcome. Fire-time re-verification Surface A is a block (`fire-verification-blocked`); Surface B is a fault. Candidate general seam principle; general-principle home if promoted: Pattern Commons #00 amendment.
+
+**Candidate text — routed from the Phase 3 spec r2 reconciliation** *(PROPOSED; absorbed here as candidate text only — promotion into design prose deferred to v0.3)*. Both are D-1 r2 consequences carrying Run 6 evidence:
+
+- *Subset confinement* (reconciliation line 6): subset confinement on this stack is a capability-layer property achieved by document decomposition; the seam's digest binds the assembled output. (Consequence: no acceptance criterion at the seam claims to confine a subset; the Grant Model's "two slots" prose is untouched pending v0.3.)
+- *Never partly authorized* (reconciliation line 18b): a document is never partly authorized; sections with different authorizations are separate documents. (General principle stated in D-1 r2; the assembly document is its structural expression.)
 
 ---
 
@@ -839,6 +866,8 @@ session before promotion.
 
 ## Changelog
 
+**v0.2 (2026-08-30).** Narrow post-Phase-3 absorption under manifest r7 (Mode 1, single context, no Counter-Pass). **Rebased onto v0.1.4 (F-B3); Landscape Position section carried unchanged.** (1) New section *Phase 3 As-Implemented Terms* absorbing the UFO Lexicon v2.5 L4 PROPOSED cluster — assembly document (D-5), payload-provenance rule (F-3.3-1), block-vs-fault principle (Q2) — and recording **`crossingGrantHorizon` as REGISTERED (v2.5 L2), not PROPOSED**: it enters this entry with registered status, the only such term in the new section. (2) KL-12 row: candidate field renamed `grantAuthorityHorizon` (v2.5 L2; rename recorded as a divergence from build-plan §KL-8c naming), host-object line corrected (F-3.2-3), disambiguated from the registered not-before field, status marked NOT closed (L1). (3) Reconciliation lines 6 and 18b absorbed as candidate text, PROPOSED — promotion to design-prose register deferred to v0.3 (a narrowing; SL-0191 → SURVIVED, narrowed). (4) SL-0190 validation event (a) fires: L4 cluster absorbed; Lexicon v2.6 promotion remains gated on this entry being read against v2.5. Status line supersedes v0.1.4's "Phases 0–2 complete; 27/27" with the Phase 3 close at `fb05ea1`. **Scoping correction (F-B1):** the r6.1-era phrase "correct Item 3.2 bullet 2 per D-2" named a Phase 3 *spec* §3 item, discharged in spec r2 and not present in this entry; the D-2 consequence for this entry is the `crossingGrantHorizon` registration above. **Deliberately not revised (F-B2, inventory corrected against v0.1.4):** KL-1/KL-2/KL-8/KL-10 rows (Landscape Position cites SL-0121 as KL-1/KL-2 closing evidence; the rows do not), Vocabulary Queue ("pending v1.8"; `crossingTimeoutHorizon` host listed open — resolved KL-8c/SL-0114), What Comes Next items 1 and 4, header references to Artifact B r2.4 and NI-5 "in effect", How It Sits in the Series table PC#8 evidence-status cell ("Design intent — prototype-pending"); repo-side: root README.md "Design intent, prototype-pending" line — all known-stale, queued for v0.3 with ledger + observation log attached. No design verdict modified.
+
 **v0.1.4 (2026-08-18).** Landscape Position section added (new §, inserted
 after "How It Sits in the Series"). Source: collision check
 `collision_check_substrate_neutral_governed_crossing.md` (2026-08-18, six
@@ -906,6 +935,10 @@ responsibility, intellectual direction held by the named author.*
 *⚑ SINGLE-CONTEXT — NOT PANELED. Form C cluster PROPOSED per UFO
 Lexicon v1.8. All new vocabulary PROPOSED pending promotion. NI-5: local-first
 specific on current evidence — zero generality claims in this entry.*
+*v0.2: Phase 3 as-implemented terms PROPOSED per UFO Lexicon v2.5 L4;
+`crossingGrantHorizon` REGISTERED (v2.5 L2). Rebased onto v0.1.4 (F-B3).
+Prototype-status prose known-stale, queued for v0.3 (F-B2, manifest r7).
+Ledger: SL-0122 carried; SL-0190 / SL-0191 validation events.*
 *Delivery-not-application enforced. Canonical files on operator's machine.*
 
-*UX Minds, LLC · J. Wright · August 18, 2026*
+*UX Minds, LLC · J. Wright · August 18, 2026 · v0.2 August 30, 2026*
