@@ -1,22 +1,22 @@
 ⚑ STAMP: SINGLE-CONTEXT — NOT PANELED
 All claims produced across producer (v0.1) and Counter-Pass iterations 1–3 (2026-08-17). Counter-Pass program complete — three iterations; all six resolutions survive narrowed; no design verdict overturned at any iteration.
-Four mechanical residuals from iteration 3 applied as v0.1.3. Landscape Position section added as v0.1.4 (2026-08-18). Form C cluster PROPOSED per UFO Lexicon v1.8. All new vocabulary PROPOSED pending promotion. CONTEXTUAL register throughout. NI-5 in effect throughout.
-v0.2 (2026-08-30): Phase 3 as-implemented terms absorbed; rebased onto v0.1.4.
+Four mechanical residuals from iteration 3 applied as v0.1.3. Landscape Position section added as v0.1.4 (2026-08-18). Form C cluster PROPOSED per UFO Lexicon v2.6. Substrate-crossing vocabulary registered (Lexicon v2.3; Phase 3 terms v2.6). CONTEXTUAL register throughout. NI-5 CLOSED at two-substrate scope (SL-0128); no generality claim beyond it.
+v0.2 (2026-08-30): Phase 3 as-implemented terms absorbed; rebased onto v0.1.4. v0.3 (2026-08-31): post-prototype revision — see Changelog.
 
 ---
 
 # Pattern Commons #8 — The Substrate-Crossing Seam
 
-**Status:** Draft v0.2.1 — Phase 3 as-implemented terms absorbed (UFO Lexicon v2.5). Phase 3 closed and verified at `fb05ea1`. Some sections still describe the prototype as pending; a post-prototype revision (v0.3) is queued — see Changelog.  
-**Date:** August 30, 2026 (v0.2) · August 18, 2026 (v0.1.4)  
+**Status:** Draft v0.3 — post-prototype revision. The prototype this entry was written ahead of now exists: Phases 0–3 complete and verified at [`fb05ea1`](https://github.com/jediwright/employment-seam) (eight governed runs against a live PDS; 51/51 tests). Known Limits closed by that evidence are marked as such; the rest remain open.  
+**Date:** August 31, 2026 (v0.3) · August 30, 2026 (v0.2) · August 18, 2026 (v0.1.4)  
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted  
 **Derived from:** Substrate-crossing seam speculative design sketch, 2026-08-17 (`substrate-crossing-seam-design-sketch_2026-08-17.md`); OQ-5 operator decision, 2026-08-17; fact-base corrections web-verified 2026-08-17.  
 **Series:** Local-first prototype series — Pattern Commons  
 **Parent pattern:** Pattern Commons #0 — The Governed Crossing (v0.1.1)  
 **Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver (infrastructure) · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam  
-**Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2.4). This entry does not amend Artifact B and makes no claim on its behalf.  
+**Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2.10). This entry does not amend Artifact B and makes no claim on its behalf.  
 **Base shape:** `seam:CrossingRecord` (`https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#`)  
-**Stamps:** ⚑ SINGLE-CONTEXT — NOT PANELED. All confidence ~ unless otherwise marked. Ledger: SL-0105 (issuance); SL-0106 (Lexicon v1.8); SL-0107 (CP iter 1); SL-0108–SL-0109 (CP iter 2); SL-0110–SL-0112 (CP iter 3 / program close); SL-0122 (v0.1.4 Landscape Position); SL-0190 / SL-0191 validation events fire at v0.2 (Lexicon v2.5 L4 absorption; reconciliation routed lines).  
+**Stamps:** ⚑ SINGLE-CONTEXT — NOT PANELED. All confidence ~ unless otherwise marked. Ledger: SL-0105 (issuance); SL-0106 (Lexicon v1.8); SL-0107 (CP iter 1); SL-0108–SL-0109 (CP iter 2); SL-0110–SL-0112 (CP iter 3 / program close); SL-0122 (v0.1.4 Landscape Position); SL-0190 / SL-0191 validation events fire at v0.2; SL-0193 successor gate (routed-line promotion) closes at v0.3; SL-0194 (Lexicon v2.6). Prototype evidence: SL-0121 (KL-1/KL-2), SL-0114 (KL-8a/8c), SL-0128 (NI-5), SL-0129 (vocabulary promotion), SL-0188/SL-0189 (Phase 3).  
 
 ---
 
@@ -24,29 +24,41 @@ v0.2 (2026-08-30): Phase 3 as-implemented terms absorbed; rebased onto v0.1.4.
 
 This is the second Pattern Commons entry authored as a domain
 instantiation of the governed crossing after the pattern was named
-(PC#0), and the first authored **before its prototype exists**. The
+(PC#0), and the first authored **before its prototype existed**. The
 employment seam (#7) earned its spec through five prototype builds and
-a reference implementation; this entry is issued as **design intent**,
-on the worked precedent that #7 itself began as a Pattern Commons entry
-before it became a Form C demonstration.
+a reference implementation; this entry was issued (v0.1, 2026-08-17) as
+**design intent**, on the worked precedent that #7 itself began as a
+Pattern Commons entry before it became a Form C demonstration. The
+prototype followed: Phases 0–3 of `jediwright/employment-seam`
+(`substrate-crossing/`), eight governed runs against a live AT Protocol
+PDS, closed and verified at `fb05ea1` (2026-08-30).
 
-The entry therefore names its own epistemic position:
+The entry therefore names its own epistemic position, as revised at v0.3:
 
-- **Every design resolution in this entry is speculative** (~,
-  single-context). Counter-Pass program complete — three iterations;
-  all design verdicts survive (narrowed where noted). No resolution
-  is prototype-verified.
-- **NI-5 is in force throughout:** the architecture is local-first
-  specific on current evidence. This entry advances **zero generality
-  claims**. It is the speculative second domain, named as such.
+- **Design resolutions are prototype-verified where a Known Limit says
+  so, and speculative (~, single-context) everywhere else.** Counter-Pass
+  program complete — three iterations; all design verdicts survived
+  (narrowed where noted); no prototype run overturned one. KL-1 and KL-2
+  closed by the Phase 2 joint conversion (SL-0121); KL-8a closed by
+  design necessity (SL-0114); KL-10 is bounded in-evidence, not closed
+  (SL-0189). The remaining limits are open — see the Status column of
+  the Known Limits table.
+- **NI-5 is CLOSED at a narrowed scope (SL-0128):** the governed
+  crossing is demonstrated on two named substrates — local-first CRDT
+  systems (#7) and AT Protocol (this entry). Additional substrates
+  remain design intent. This entry advances **no generality claim beyond
+  that scope**, and the narrowed claim itself awaits Counter-Pass before
+  any publication-track use.
 - **Artifact B is untouched by this entry.** The Form C manifesto-spec
-  neither cites nor anticipates this seam. If a prototype produces
-  evidence, Artifact B may be amended later by that evidence — the
-  sequencing the habitable finding established — not by this document.
+  neither cites nor anticipates this seam. Prototype evidence now exists;
+  any Artifact B amendment it warrants happens in an Artifact B session
+  by that evidence — the sequencing the habitable finding established —
+  not by this document.
 - The Known Limits section (KL-1–KL-12) is not an appendix. It is the
   honest core of the entry: the inventory of everything the design
-  cannot resolve speculatively, each item paired with the class of
-  evidence that would close it.
+  could not resolve speculatively, each item paired with the class of
+  evidence that would close it — and, from v0.3, with whether that
+  evidence has arrived.
 
 Per PC#0's conformance requirements for new entries, this document
 (1) cites PC#0 as the parent pattern, (2) specifies only what diverges
@@ -232,13 +244,13 @@ claim** — and the vocabulary's internal grammar keeps those apart
 (`governanceEvent` is the governance-semantics discriminant;
 `boundType` is the exposure claim the record makes).
 
-**New `governanceEvent` value** *(PROPOSED)*:
+**New `governanceEvent` value** *(registered — UFO Lexicon v2.3, SL-0129)*:
 
 | Value | Definition |
 |---|---|
 | `substrate-crossing` | A governed crossing whose two sides have different substrate properties — different epistemic regimes for revocation, exposure, and record integrity. The event-class discriminant for substrate-crossing seam records. Pairs with `boundType: exposure-unbounded`. |
 
-**New `boundType` value** *(PROPOSED)*:
+**New `boundType` value** *(registered — UFO Lexicon v2.3, SL-0129)*:
 
 | Value | Definition | Used by |
 |---|---|---|
@@ -256,7 +268,7 @@ not substitute `exposure-unbounded`; an architecture whose enforcement
 terminates at a globally indexed regime must not substitute
 `exposure-upper-bound`. (CP-F1 / CP-F3 — ordering note rewrite.)
 
-**Companion field** *(PROPOSED — conditional, substrate-facing)*:
+**Companion field** *(registered v2.3 — conditional, substrate-facing)*:
 
 | Field | Vocabulary | Purpose |
 |---|---|---|
@@ -277,7 +289,7 @@ group. This matches the schema's existing conditional-requirement
 pattern (`provenanceStatusBasis` required when status ≠ `asserted`;
 `chainDepth` required when `chainReference` is present).
 
-**Conditional field group** *(PROPOSED — required when `crossingType:
+**Conditional field group** *(registered v2.3 — required when `crossingType:
 substrate-crossing`)*:
 
 | Field | Purpose |
@@ -285,6 +297,19 @@ substrate-crossing`)*:
 | `regimeAcknowledgment` | Declared acknowledgment, at grant time, that enforcement terminates at the crossing and that post-crossing revocation is (per `recallSemantics`) a request, not an enforcement. Author-declared; Q6 lock applies. The gate checks *presence*, not authorship — under Q6 the field is a declared-acknowledgment ceiling, not a verified-acknowledgment guarantee; prefilled boilerplate is not architecturally distinguishable from person-authored text. Juridical effect (whether this field constitutes a waiver or consent in any legal forum) is a question for the legal substrate, not the schema. Form, authorship-verifiability, and effect review: see KL-7. |
 | `declaredBoundType` | The `boundType` the crossing record will carry — `exposure-unbounded`, named at grant time so the epistemic claim is fixed before the act. |
 | `recallSemantics` | Controlled vocabulary as defined above; declared per target substrate at grant time. Note: target-substrate semantics can change between grant time and publish time (protocol revisions, PDS policy changes); a standing grant could span such a change, making the declared value stale at act time. The gate re-asserts the declared value but cannot verify substrate currency. See KL-12. |
+
+**What a grant authorizes — as implemented (v0.3; D-1 r2, Run 6).** A
+document is never partly authorized; sections with different
+authorizations are separate documents. On the Keyhive stack the grant is
+a per-document read capability with no fields of its own, so "publish
+this subset" is not expressed by narrowing a grant — it is expressed by
+decomposing the content into documents, granting each, and letting the
+crossing actor assemble the granted inputs into a single seam-owned
+**assembly document** (Lexicon v2.6, registered) in a fixed order. The
+assembly document is the structural expression of the principle: the
+seam's intent record, digest, and completion record all point at it, not
+at any input. (Promoted from candidate text at v0.3; SL-0193 successor
+gate.)
 
 **Deliberate exclusion: no `waiver` field.** "Waiver" is
 legal-register language implying the architecture extracts a rights
@@ -325,11 +350,26 @@ The gate honestly enforces, pre-crossing and at crossing moment only:
 The gate fails closed, as always: unconfirmed grant state blocks;
 silence blocks; a missing conditional group blocks.
 
-**TOCTOU note (CP-F9).** The gate checks grant currency, then the
-publish fires; a revocation landing in that window is checked-then-
-crossed. This race cannot be eliminated under the finality-arbiter-free
-constraint. The gate's check is honest to check-time, not to fire-time;
-the intent record's `emittedAt` bounds the window in-evidence. See KL-10.
+**Subset confinement — as implemented (v0.3; D-1 r2, Run 6).** Subset
+confinement on this stack is a capability-layer property achieved by
+document decomposition (Grant Model above); the seam does not confine a
+subset and no acceptance criterion claims that it does. What the seam
+binds is the assembled output: `authorizedContentDigest` is computed
+over the assembly document's content object at mint, and the publish is
+verified against that digest at fire time. (Promoted from candidate text
+at v0.3; SL-0193 successor gate.)
+
+**TOCTOU note (CP-F9; as implemented at Phase 3).** The gate checks grant
+currency, then the publish fires; a revocation landing in that window is
+checked-then-crossed. This race cannot be eliminated under the
+finality-arbiter-free constraint. The gate's check is honest to
+check-time, not to fire-time; the intent record's `emittedAt` bounds the
+window in-evidence. Phase 3 narrowed the window for the *content* half
+of the race: the seam re-reads the assembly document immediately before
+the fire and blocks (`fire-verification-blocked`) if its digest no longer
+equals the minted `authorizedContentDigest` (Run 8: block 2 ms after
+mint, nothing published; SL-0189). The *grant-currency* half remains
+checked-then-crossed. See KL-10.
 
 ---
 
@@ -344,8 +384,9 @@ before the publish call. `recordType: crossing-intent` /
 `governanceEvent: substrate-crossing` / `boundType: exposure-unbounded`.
 Also carries the gate result, the identity binding block (below), and
 an `authorizedContentDigest`
-(PROPOSED — a CID or hash of the content being authorized to cross,
-computable locally before the publish fires). The digest is the binding
+(registered v2.3 — a CID or hash of the content being authorized to cross,
+computable locally before the publish fires; as implemented, computed over
+the assembly document's content object, D-3). The digest is the binding
 between what was authorized and what the completion record later
 attests; without it, a deferred party can verify the published record's
 integrity via CID but cannot verify it is the content the grant
@@ -386,7 +427,7 @@ crossing was attempted and never confirmed.
 **The chain of evidence crosses; the chain of governance terminates at
 the crossing. Declared, not hidden.**
 
-**Completion-record fields** *(PROPOSED — conditional)*:
+**Completion-record fields** *(registered v2.3 — conditional)*:
 
 | Field | Purpose |
 |---|---|
@@ -419,14 +460,14 @@ implying continuity that does not exist.
 The two sides of the crossing have different identity custody models,
 and the record must bind them without asserting equivalence.
 
-**Identity binding block** *(PROPOSED — conditional, on the intent
+**Identity binding block** *(registered v2.3 — conditional, on the intent
 record, required when `crossingType: substrate-crossing`)*:
 
 | Field | Purpose |
 |---|---|
 | `grantorDID` | Seam-side DID — self-sovereign, person-held keys (the employment seam's Class A discipline). |
 | `targetDID` | AT Protocol DID (`did:plc` or `did:web`). |
-| `identityCustodyClass` | Controlled vocabulary *(PROPOSED)*: `self-custodied` / `mixed-custody` / `provider-custodied`. AT Protocol default: `provider-custodied`. With a user-enrolled higher-priority rotation key: `mixed-custody`. |
+| `identityCustodyClass` | Controlled vocabulary *(registered v2.3)*: `self-custodied` / `mixed-custody` / `provider-custodied`. AT Protocol default: `provider-custodied`. With a user-enrolled higher-priority rotation key: `mixed-custody`. |
 
 **Attribution strength cap.** The claim "post-crossing activity under
 `targetDID` is attributable to the grantor" enters the intent record's
@@ -487,7 +528,7 @@ attribution claim.
 | Failure posture | Local state preserved; retry | Nine-state taxonomy; worker's copy is source of truth | Intent-without-completion is legible; local state preserved |
 | **Exposure posture** | Bounded-set — named counterparty or enumerable peer set; `exposure-upper-bound` assertable | Bounded-set — receiving party + legal record; `exposure-upper-bound` assertable | **Unbounded — no bound assertable after crossing; `exposure-unbounded` is the P9-honest value** |
 | Governance weight | At the seam | At the seam, both sides | **Entirely pre-crossing; terminates at the boundary, by declaration** |
-| Evidence status | Built | Built + reference implementation | **Design intent — prototype-pending** |
+| Evidence status | Built | Built + reference implementation | **Prototype-verified on this stack — Phases 0–3, eight governed runs, closed at `fb05ea1`** (SL-0121, SL-0188, SL-0189) |
 
 What this entry inherits from the prior seams: the write-before-fire
 discipline of #2 (radicalized into the record-before-crossing
@@ -587,10 +628,13 @@ operators, and a third-party implementation against a different substrate is
 possible. The (ii) and (iii) distinctions are architectural and survive a
 future Dogwood substrate extension.
 
-**Empirical note (as of 2026-08-18):** KL-1 and KL-2 have converted from
-prototype-pending to closing evidence (PC#8 Phase 2 joint conversion event,
-SL-0121). The claim is no longer spec-vs-spec against Dogwood; it is
-prototype-evidence vs. spec. Dogwood has no published prototype evidence of
+**Empirical note (2026-08-18, extended 2026-08-31):** KL-1 and KL-2
+converted from prototype-pending to closing evidence at the Phase 2 joint
+conversion (SL-0121); Phase 3 then added public-subset assembly (Run 6),
+delayed release under a not-before horizon (Run 7), and fire-time
+re-verification against the minted digest (Run 8), closed at `fb05ea1`
+(SL-0188, SL-0189). The claim is no longer spec-vs-spec against Dogwood; it
+is prototype-evidence vs. spec. Dogwood has no published prototype evidence of
 middleware-enforced write-before-fire ordering. This asymmetry is real and
 should be maintained in any comparative framing.
 
@@ -691,25 +735,27 @@ produced no competing middleware claim. Residual risk assessed CLOSED.
 
 ## Known Limits — KL-1 through KL-12
 
-This is the entry's core section. Each limit names what cannot be
+This is the entry's core section. Each limit names what could not be
 resolved speculatively and the class of evidence that would close it.
-None is papered over; several are load-bearing for whether the design
-survives contact.
+None is papered over; several were load-bearing for whether the design
+survived contact. The **Status** column (added v0.3) records what the
+prototype actually delivered, sourced to the Survival Ledger entry that
+records it; a limit is CLOSED only where that entry says so.
 
-| # | Cannot be resolved speculatively | Closing evidence |
-|---|---|---|
-| **KL-1** | Publish-completion failure modes: the real behavior of the PDS-accept vs. relay-ingest gap, and whether intent-without-completion is in practice legible to deferred parties as designed | Prototype: instrumented crossing against a live PDS, with relay observation |
-| **KL-2** | Whether a custom-lexicon `seamCrossingRef` back-pointer survives real AppView/consumer handling; CID-anchor stability under PDS migration | Prototype + ecosystem observation |
-| **KL-3** | Attribution strength of `mixed-custody` under an adversarial PDS — the 72-hour nullification mechanics, and whether that window justifies any upgrade over `provider-custodied` | Technical verification against the did:plc specification + adversarial test |
-| **KL-4** | The empirical meaning of `propagated-request` recall: delete-event propagation latency and third-party compliance in practice | Observation study; cannot be designed into existence |
-| **KL-5** | Generality of `exposure-unbounded` to a third target regime (ActivityPub, plain public web, iroh-gossip with bounded topic membership) | A third worked crossing; NI-5 discipline holds until then |
-| **KL-6** | iroh-gossip crossing classification: is topic membership a valid exposure upper bound, making that crossing `exposure-upper-bound` rather than `exposure-unbounded`? | Deferred; iroh served as an axis-confirming reference only |
-| **KL-7** | The form, authorship-verifiability, and juridical effect of `regimeAcknowledgment`: free text vs. structured assertion vs. standard-text reference is the form question; whether the gate-unverified declaration constitutes verified consent (authorship question) and whether it carries waiver or consent effect in any legal forum (effect question) are independent and deeper | Prototype with human participants; legal-legibility review; effect: legal substrate assessment |
-| **KL-8** | Retry and multi-intent-record semantics: after `crossing-intent-failed`, does retry require a new gate pass and a new intent record, or can the original intent record anchor a retry? *Interim discipline: new gate pass required — conservative, fail-closed, consistent with the gate's act-time-current posture; displacing evidence required to relax.* Multi-intent-with-no-completion posture and `completion-mint-failed` recovery path also open. | State space designable now (spec amendment session); empirical population by KL-1 prototype |
-| **KL-9** | Enforceability of the record-before-crossing ordering under Q6: the discipline is `author-declared` until `timestamp-signed` infrastructure unlocks; nothing structurally prevents backdating an intent record | Signed-timestamp infrastructure (already named as locked in the crossing-record vocabulary); `timestamp-signed` anchor type is the converting event |
-| **KL-10** | The check-to-fire window (TOCTOU): a revocation landing between gate check and publish fires is checked-then-crossed at an irreversible boundary; the window cannot be eliminated under the finality-arbiter-free constraint | Prototype instrumentation of the window duration; cannot be closed, only bounded in-evidence; `emittedAt` on the intent record bounds it for deferred parties |
-| **KL-11** | Gate reach over derived content: content derived from governed records (paraphrase, screenshot, re-publication outside the governed stack) crosses no boundary the gate can detect; the trigger is narrowed to architecture-mediated records and exports, but the residual surface is a permanent limit | None fully — P8 honesty requires naming this as permanently out-of-reach; the narrow trigger is the correct posture |
-| **KL-12** | `recallSemantics` staleness: target-substrate deletion semantics can change between grant time and act time (protocol revisions, PDS policy); a standing grant could declare `propagated-request` and have that become inaccurate before the publish fires | Design candidate: gate re-asserts declared value at act time; a grant-side validity-horizon field **`grantAuthorityHorizon`** (PROPOSED; renamed at Lexicon v2.5 L2 — formerly the `crossingGrantHorizon` candidate) declares the horizon after which the grant's authority to initiate a crossing *lapses* (a not-after on authority scope; not `evidenceDecay`, a `seam:CrossingRecord` base-shape field not applicable to the grant object — V2-F5). **Host object (corrected v2.5, F-3.2-3):** the grant, where the grant object carries fields; on the current stack Keyhive `Access` is field-less, so the intent record is the only available host — a stack question, not settled by the lexicon. **Not to be confused with the registered `crossingGrantHorizon`** (not-before horizon on the intent record, D-2 — see Phase 3 As-Implemented Terms). **Status at v0.2:** NOT closed — Runs 7–8 exercised a seam-hosted not-before gate and a no-horizon control; grant-authority lapse was not exercised (Lexicon v2.5 L1). Closing evidence: a governed run in which grant authority lapses and the gate refuses on that ground |
+| # | Cannot be resolved speculatively | Closing evidence | Status (v0.3) |
+|---|---|---|---|
+| **KL-1** | Publish-completion failure modes: the real behavior of the PDS-accept vs. relay-ingest gap, and whether intent-without-completion is in practice legible to deferred parties as designed | Prototype: instrumented crossing against a live PDS, with relay observation | **CLOSED** — Phase 2 joint conversion (SL-0121): instrumented crossings against a live PDS, Runs 1–5, relay observation via Jetstream; intent-without-completion legible in-document (Run 3 failed leg). Reconfirmed through Run 8. |
+| **KL-2** | Whether a custom-lexicon `seamCrossingRef` back-pointer survives real AppView/consumer handling; CID-anchor stability under PDS migration | Prototype + ecosystem observation | **CLOSED for PDS and firehose; AppView layer observed; migration half OPEN.** `seamCrossingRef` intact at `getRecord()` and present in the raw firehose commit (SL-0121; Runs 4–8); dropped at the AppView render every run (KL-2 layer finding). CID-anchor stability under PDS migration was explicitly out of the conversion's scope and has not been run. |
+| **KL-3** | Attribution strength of `mixed-custody` under an adversarial PDS — the 72-hour nullification mechanics, and whether that window justifies any upgrade over `provider-custodied` | Technical verification against the did:plc specification + adversarial test | OPEN. |
+| **KL-4** | The empirical meaning of `propagated-request` recall: delete-event propagation latency and third-party compliance in practice | Observation study; cannot be designed into existence | OPEN. |
+| **KL-5** | Generality of `exposure-unbounded` to a third target regime (ActivityPub, plain public web, iroh-gossip with bounded topic membership) | A third worked crossing | OPEN — no third regime run. NI-5 CLOSED at two-substrate scope (SL-0128); generality to a third regime is exactly what remains unclaimed. |
+| **KL-6** | iroh-gossip crossing classification: is topic membership a valid exposure upper bound, making that crossing `exposure-upper-bound` rather than `exposure-unbounded`? | Deferred; iroh served as an axis-confirming reference only | OPEN (deferred). |
+| **KL-7** | The form, authorship-verifiability, and juridical effect of `regimeAcknowledgment`: free text vs. structured assertion vs. standard-text reference is the form question; whether the gate-unverified declaration constitutes verified consent (authorship question) and whether it carries waiver or consent effect in any legal forum (effect question) are independent and deeper | Prototype with human participants; legal-legibility review; effect: legal substrate assessment | OPEN. |
+| **KL-8** | Retry and multi-intent-record semantics: after `crossing-intent-failed`, does retry require a new gate pass and a new intent record, or can the original intent record anchor a retry? *Discipline: new gate pass required — entailed by the gate's act-time-current posture and the revocation-window constraint; closed by design (SL-0114), not awaiting evidence.* Multi-intent-with-no-completion posture and `completion-mint-failed` recovery path also open. | State space designable now (spec amendment session); empirical population by KL-1 prototype | **8a CLOSED by design necessity** (SL-0114): retry requires a new gate pass and new intent record; not an empirical question. **8c CLOSED**: `crossingTimeoutHorizon` hosted on the intent record (SL-0114; registered v2.1/v2.3). **8b OPEN** (~): independent authorization events, no supersession; `crossingIntentRef` required on the completion record as implemented. |
+| **KL-9** | Enforceability of the record-before-crossing ordering under Q6: the discipline is `author-declared` until `timestamp-signed` infrastructure unlocks; nothing structurally prevents backdating an intent record | Signed-timestamp infrastructure (already named as locked in the crossing-record vocabulary); `timestamp-signed` anchor type is the converting event | OPEN. |
+| **KL-10** | The check-to-fire window (TOCTOU): a revocation landing between gate check and publish fires is checked-then-crossed at an irreversible boundary; the window cannot be eliminated under the finality-arbiter-free constraint | Prototype instrumentation of the window duration; cannot be closed, only bounded in-evidence; `emittedAt` on the intent record bounds it for deferred parties | **BOUNDED IN-EVIDENCE, not closed** (SL-0189): Run 8 instrumented the mint→fire window; fire-time re-verification blocks a content change 2 ms after mint. The grant-currency half of the race remains checked-then-crossed by design. |
+| **KL-11** | Gate reach over derived content: content derived from governed records (paraphrase, screenshot, re-publication outside the governed stack) crosses no boundary the gate can detect; the trigger is narrowed to architecture-mediated records and exports, but the residual surface is a permanent limit | None fully — P8 honesty requires naming this as permanently out-of-reach; the narrow trigger is the correct posture | PERMANENT (as stated). |
+| **KL-12** | `recallSemantics` staleness: target-substrate deletion semantics can change between grant time and act time (protocol revisions, PDS policy); a standing grant could declare `propagated-request` and have that become inaccurate before the publish fires | Design candidate: gate re-asserts declared value at act time; a grant-side validity-horizon field **`grantAuthorityHorizon`** (PROPOSED; renamed at Lexicon v2.5 L2 — formerly the `crossingGrantHorizon` candidate) declares the horizon after which the grant's authority to initiate a crossing *lapses* (a not-after on authority scope; not `evidenceDecay`, a `seam:CrossingRecord` base-shape field not applicable to the grant object — V2-F5). **Host object (corrected v2.5, F-3.2-3):** the grant, where the grant object carries fields; on the current stack Keyhive `Access` is field-less, so the intent record is the only available host — a stack question, not settled by the lexicon. **Not to be confused with the registered `crossingGrantHorizon`** (not-before horizon on the intent record, D-2 — see Phase 3 As-Implemented Terms). **Status at v0.2:** NOT closed — Runs 7–8 exercised a seam-hosted not-before gate and a no-horizon control; grant-authority lapse was not exercised (Lexicon v2.5 L1). Closing evidence: a governed run in which grant authority lapses and the gate refuses on that ground | **OPEN** — Lexicon v2.5 L1: Run 7 exercised a seam-level not-before gate; grant-authority lapse was not exercised; Run 8 is a no-horizon control. Not closing evidence. |
 
 ---
 
@@ -724,126 +770,113 @@ survives contact.
 - It does not resolve the PLC centralization asymmetry, the
   adversarial-PDS attribution question, or the acknowledgment form —
   those are KL items with named closing evidence.
-- It does not advance the NI-5 closure motion. A second domain
-  becomes evidence when a prototype exists, not when a spec is
-  written. That attachment is earned by the prototype, not declared
-  by this entry.
+- It does not, by itself, settle NI-5. NI-5 was closed at a narrowed
+  two-substrate scope by its own pre-registered decision rule
+  (SL-0128), on the prototype evidence this entry's KL-1/KL-2 named —
+  the attachment was earned by the prototype, as this entry said it
+  would have to be. The narrowed scope claim awaits Counter-Pass before
+  publication-track use; nothing here widens it.
 
 ---
 
-## Phase 3 As-Implemented Terms — PROPOSED (one registered field)
+## Phase 3 As-Implemented Terms — registered (UFO Lexicon v2.6)
 
-*Added v0.2 (2026-08-30). Source: UFO Lexicon v2.5 (rulings L2–L4, SL-0190); decision records D-2, D-3, D-5, D-7; CONVENTIONS v0.4 at `fb05ea1`; reconciliation record 2026-08-30 (routed lines 6, 18b; SL-0191). The **Vocabulary Queue below predates the Lexicon v2.3 promotion of this entry's original cluster and is known-stale; see F-B2 / v0.3.** Nothing in this section amends the Grant Model, Gate, Two-Record Pattern, or Landscape Position prose above, which remains as issued at v0.1.4; promotion of any term here into that prose is v0.3 work.*
+*Added v0.2 (2026-08-30); registered v0.3. Source: UFO Lexicon v2.5 (rulings L2–L4, SL-0190) and v2.6 (rulings L7–L12, SL-0194); decision records D-2, D-3, D-5, D-7; CONVENTIONS v0.4 at `fb05ea1`; reconciliation record 2026-08-30 (SL-0191).*
 
-These terms name what the Phase 3 build (Items 3.1–3.3, Runs 6–8) implemented. They are recorded here because this entry is the register home the Lexicon names for them; their promotion in the Lexicon (v2.6) is gated on this absorption being read against v2.5, not on this session alone.
+These terms name what the Phase 3 build (Items 3.1–3.3, Runs 6–8) implemented. All four are registered in the Lexicon's Form C sub-register, substrate-crossing seam. The two principles are registered **seam-scoped**: their general-seam reading remains PROPOSED with a Pattern Commons #00 amendment as its gate (v2.6 L9). The two routed lines that sat here as candidate text at v0.2 were promoted into the Grant Model and Gate prose at v0.3 (SL-0193 successor gate).
 
-**`crossingGrantHorizon`** *(REGISTERED — Lexicon v2.5 L2; the only registered term in this section)* — an optional *not-before* horizon hosted on the `crossing-intent` record beside `crossingTimeoutHorizon`; the gate checks it from the system clock at mint, fresh on every attempt, never cached; a pre-horizon attempt mints no record (D-2). Seam-level, not grant-level. Sense of "grant" in the name (L3): the earliest-effective time of the authorization, not the host object — the two intent-record horizons differ in meaning (earliest-authorized vs latest-before-unconfirmed), not in host. Consistency rule (D-7): `crossingGrantHorizon ≥ crossingTimeoutHorizon` never mints and is refused explicitly (`horizon-inconsistent`, both values logged), never clamped or reordered. Registered on build-validation grounds (Runs 7–8). **It is not KL-12 closing evidence** and not the `grantAuthorityHorizon` lapse candidate (KL-12 row). AppView note (L5): horizon compliance is legible only from the intent record; an AppView may display a record pre-embargo.
+**`crossingGrantHorizon`** *(registered — Lexicon v2.5 L2)* — an optional *not-before* horizon hosted on the `crossing-intent` record beside `crossingTimeoutHorizon`; the gate checks it from the system clock at mint, fresh on every attempt, never cached; a pre-horizon attempt mints no record (D-2). Seam-level, not grant-level. Sense of "grant" in the name (L3): the earliest-effective time of the authorization, not the host object — the two intent-record horizons differ in meaning (earliest-authorized vs latest-before-unconfirmed), not in host. Consistency rule (D-7): `crossingGrantHorizon ≥ crossingTimeoutHorizon` never mints and is refused explicitly (`horizon-inconsistent`, both values logged), never clamped or reordered. Registered on build-validation grounds (Runs 7–8). **It is not KL-12 closing evidence** and not the `grantAuthorityHorizon` lapse candidate (KL-12 row). AppView note (L5): horizon compliance is legible only from the intent record; an AppView may display a record pre-embargo.
 
-**assembly document** *(PROPOSED — D-5)* — the single seam-owned Automerge document a crossing actor assembles from granted input documents, in a fixed aggregation order; the object every crossing goes through, single-source included (one code path in `initiateCrossing()`). Hosts the `crossingRecords` and `completionRecords` arrays; `sourceDocumentURI` / `sourceDocumentCID` name it (CID = its heads at mint); `sourceLineage` lists the granted inputs; `authorizedContentDigest` (D-3) is computed over its content object. Runs 1–5 evidence was minted under the singular shape and is never retrofitted.
+**assembly document** *(registered — Lexicon v2.6 L8; D-5)* — the single seam-owned Automerge document a crossing actor assembles from granted input documents, in a fixed aggregation order; the object every crossing goes through, single-source included (one code path in `initiateCrossing()`). Hosts the `crossingRecords` and `completionRecords` arrays; `sourceDocumentURI` / `sourceDocumentCID` name it (CID = its heads at mint); `sourceLineage` lists the granted inputs; `authorizedContentDigest` (D-3) is computed over its content object. Runs 1–5 evidence was minted under the singular shape and is never retrofitted.
 
-**payload-provenance rule** *(PROPOSED — F-3.3-1)* — the published record's content object is built from the assembled content the seam hash-checked at mint, never from an independent fixture or a separately constructed object. From `fb05ea1` this is enforced by the fire wrapper (fire-time re-verification, Item 3.3) and asserted by the e2e test on the bytes actually published. Origin: an Item 1.2-era fixture published a payload divergent from its authorized content, masked until fire-time verification existed (fixture-only; no live record affected). Candidate general seam principle: *a seam publishes only what its own intent record describes.* General-principle home if promoted: Pattern Commons #00 amendment.
+**payload-provenance rule** *(registered seam-scoped — Lexicon v2.6 L9; F-3.3-1)* — the published record's content object is built from the assembled content the seam hash-checked at mint, never from an independent fixture or a separately constructed object. From `fb05ea1` this is enforced by the fire wrapper (fire-time re-verification, Item 3.3) and asserted by the e2e test on the bytes actually published. Origin: an Item 1.2-era fixture published a payload divergent from its authorized content, masked until fire-time verification existed (fixture-only; no live record affected). General-seam reading — *a seam publishes only what its own intent record describes* — remains PROPOSED; home if promoted: Pattern Commons #00 amendment.
 
-**block-vs-fault principle** *(PROPOSED — Item 3.3 ruling Q2)* — a *block* is a gate outcome on an external condition detected (the document changed under the seam; an expired or not-yet-reached horizon; a digest mismatch at mint): a loggable event, nothing written or nothing fired, the evidence posture preserved (`crossing-unconfirmed` derivable). A *seam fault* is the seam breaking its own invariant on bytes it just wrote (the step-4 recompute inequality): thrown, not logged as a gate outcome. Fire-time re-verification Surface A is a block (`fire-verification-blocked`); Surface B is a fault. Candidate general seam principle; general-principle home if promoted: Pattern Commons #00 amendment.
+**block-vs-fault principle** *(registered seam-scoped — Lexicon v2.6 L9; Item 3.3 ruling Q2)* — a *block* is a gate outcome on an external condition detected (the document changed under the seam; an expired or not-yet-reached horizon; a digest mismatch at mint): a loggable event, nothing written or nothing fired, the evidence posture preserved (`crossing-unconfirmed` derivable). A *seam fault* is the seam breaking its own invariant on bytes it just wrote (the step-4 recompute inequality): thrown, not logged as a gate outcome. Fire-time re-verification Surface A is a block (`fire-verification-blocked`); Surface B is a fault. General-seam reading remains PROPOSED; home if promoted: Pattern Commons #00 amendment.
 
-**Candidate text — routed from the Phase 3 spec r2 reconciliation** *(PROPOSED; absorbed here as candidate text only — promotion into design prose deferred to v0.3)*. Both are D-1 r2 consequences carrying Run 6 evidence:
-
-- *Subset confinement* (reconciliation line 6): subset confinement on this stack is a capability-layer property achieved by document decomposition; the seam's digest binds the assembled output. (Consequence: no acceptance criterion at the seam claims to confine a subset; the Grant Model's "two slots" prose is untouched pending v0.3.)
-- *Never partly authorized* (reconciliation line 18b): a document is never partly authorized; sections with different authorizations are separate documents. (General principle stated in D-1 r2; the assembly document is its structural expression.)
-
+**Routed lines (reconciliation lines 6 and 18b) — promoted at v0.3.** *Subset confinement is a capability-layer property; the seam's digest binds the assembled output* now sits in the Gate section; *a document is never partly authorized* now sits in the Grant Model. Both are D-1 r2 consequences with Run 6 evidence. Recorded in the Lexicon as design principles, not vocabulary (v2.6 L10).
 ---
 
-## Vocabulary Queue — PROPOSED
+## Vocabulary Register — Promotion Record
 
-All of the following are PROPOSED pending a UFO Lexicon v1.8 amendment
-session. None governs output until promoted. Nearest home: v1.8
-amendment, bundled with this spec's issuance.
+*This section was the entry's PROPOSED vocabulary queue from v0.1 to v0.2.
+Every item in it has since been ruled on. It is kept as a record of what
+was proposed and where each item landed; the Lexicon is the register of
+record.*
 
-**New controlled-vocabulary values:**
+**Promoted to the Form C sub-register, substrate-crossing seam — UFO
+Lexicon v2.3 (SL-0129, 2026-08-19).** Gate conditions met: Counter-Pass
+complete (SL-0105–SL-0112); KL-1/KL-2 joint conversion (SL-0121); NI-5
+closed at two-substrate scope (SL-0128).
+
 - `governanceEvent`: `substrate-crossing`
-- `boundType`: `exposure-unbounded` (ordering: below
-  `exposure-upper-bound`)
+- `boundType`: `exposure-unbounded` — floor value; ordering rewritten to
+  the symmetric substitution rule (CP-F1/CP-F3) at promotion
+- `recordType`: `crossing-intent` / `crossing-completion` (CP-F2)
+- `crossingType` conditional grant group: `regimeAcknowledgment`
+  (declared acknowledgment; gate checks presence, not authorship —
+  V2-F6c overclaim corrected at v1.9), `declaredBoundType`,
+  `recallSemantics`
+- `recallSemantics` controlled vocabulary: `enforced-stream-close` /
+  `propagated-request` / `none`
+- Completion-record fields: `crossingTargetURI`, `crossingTargetCID`
+- Identity binding block: `grantorDID`, `targetDID`,
+  `identityCustodyClass` (`self-custodied` / `mixed-custody` /
+  `provider-custodied`; attribution cap extended to `mixed-custody`,
+  CP-F13, corrected at v1.9)
+- `authorizedContentDigest` (CP-F11)
+- `crossingTimeoutHorizon` (V2-F4/V3-F2) — host object resolved to the
+  **intent record** (KL-8c, SL-0114; Lexicon v2.1 correction SL-0119)
 
-**New conditional fields on the grant** (required when `crossingType:
-substrate-crossing`): `crossingType` (discriminant);
-`regimeAcknowledgment`; `declaredBoundType`; `recallSemantics`
+**Promoted — UFO Lexicon v2.5 (SL-0190) and v2.6 (SL-0194).** See the
+Phase 3 As-Implemented Terms section above: `crossingGrantHorizon`
+(v2.5); assembly document, payload-provenance rule, block-vs-fault
+principle (v2.6, the latter two seam-scoped).
 
-**New conditional fields on the completion record:**
-`crossingTargetURI`; `crossingTargetCID`
+**Still PROPOSED.** `grantAuthorityHorizon` (KL-12 lapse candidate;
+renamed v2.5) — gate: KL-12 closing evidence. General-seam reading of
+the payload-provenance rule and the block-vs-fault principle — gate:
+Pattern Commons #00 amendment. Form C cluster (P8–P14) — gate: Tier 2
+collision check + Panel Pass; unchanged by this entry.
 
-**New conditional field group on the intent record:** identity binding
-block (`grantorDID`; `targetDID`; `identityCustodyClass`)
-
-**New controlled vocabulary:** `identityCustodyClass`
-(`self-custodied` / `mixed-custody` / `provider-custodied`)
-
-**New controlled vocabulary:** `recallSemantics`
-(`enforced-stream-close` / `propagated-request` / `none`)
-
-**New `recordType` values** (CP-F2): `crossing-intent` (pre-crossing
-intent record) and `crossing-completion` (post-hoc completion record).
-Both pair with `governanceEvent: substrate-crossing`.
-
-**New field on intent record** (CP-F11): `authorizedContentDigest` —
-a CID or hash of the content being authorized to cross, computable
-locally before the publish fires.
-
-**New field — intent record or grant** (V2-F4 / V3-F2):
-`crossingTimeoutHorizon` — an ISO 8601 date/datetime after which an
-unconfirmed crossing transitions from `crossing-intent-pending` to
-`crossing-unconfirmed`. Host object (intent-record vs. grant) and
-value source (protocol-defined vs. user-declared) are part of
-KL-8's designable-now scope.
-
-**Ordering note amendment** (CP-F1/CP-F3): the `boundType` ordering
-rule should be rewritten at promotion time from the absolute
-"substituting weaker for stronger is never permitted" formulation to
-the symmetric principle: the asserted value must match the
-architecture's actual enforcement capacity; both overclaiming and
-underclaiming are substitution errors; overclaiming inadmissible per
-P9. The scale orders *admissible claim strength* (not a single
-epistemic quantity).
-
-**Lexicon v1.8 divergence note (V2-F6 — pending v1.9 or
-promotion-time amendment).** The v1.8 PROPOSED-queue cluster was
-registered from v0.1; v0.1.2 diverges in five places: (a)
-`exposure-unbounded` entry carries the pre-CP-F1 asymmetric ordering
-rule and "epistemic-strength ordering" label — v0.1.2 uses the
-symmetric rule and "admissible claim strength"; (b)
-`identityCustodyClass` cap text covers provider-custodied only —
-v0.1.2 extends the cap to `mixed-custody` (CP-F13); (c)
-`regimeAcknowledgment` queue text says "person-authored
-acknowledgment" — v0.1.2 denies authorship verifiability ("presence,
-not authorship"; "declared-acknowledgment ceiling"); this is the
-substantive divergence: the queue entry overclaims relative to its
-source spec, a P9-reflexive inaccuracy requiring correction before
-promotion; (d) cluster cites the v0.1 filename — should reference
-v0.1.2; (e) cluster omits `authorizedContentDigest` (CP-F11), the two
-`recordType` values (CP-F2), and `crossingTimeoutHorizon` (V2-F4 /
-V3-F2) — three omissions. None of (a)–(e) affects CV-table
-registration (out of scope); all five require a v1.9 amendment
-session before promotion.
+**Divergence note (V2-F6) — resolved.** The five divergences between the
+v1.8 queue text and v0.1.2 were corrected at Lexicon v1.9 (a, b, c, e)
+and v2.1 (host object); (d) is superseded by citation on the live repo
+path. No open divergence between this entry and the Lexicon is known at
+v0.3.
 
 ---
 
 ## What Comes Next
 
-1. **UFO Lexicon v1.9 amendment session** — correct the five
-   divergences from the V2-F6 note (V2-F6c `regimeAcknowledgment`
-   "person-authored" overclaim is the substantive item; (e) now
-   covers three omissions including `crossingTimeoutHorizon`).
-2. ~~**Prototype** — instrumented crossing against a live PDS; closing
-   evidence for KL-1 and KL-2; gates CV-table promotion and any
-   NI-5 motion.~~
-3. ~~**Prototype.** An instrumented crossing against a live PDS —
-   the closing evidence for KL-1 and KL-2, and the event that would
-   make this entry's design claims testable rather than declared.~~
-4. **Only after prototype evidence:** any Artifact B amendment, any
-   NI-5 motion, any generality language. The employment-seam
-   sequencing precedent governs.
+The v0.1 list — Lexicon v1.9 session, prototype, and "only after
+prototype evidence" — has been discharged in full (Lexicon v1.9 ran
+2026-08-17; Phases 0–3 closed 2026-08-30; vocabulary promoted v2.3–v2.6).
+What remains, as of v0.3:
+
+1. **Counter-Pass on the narrowed NI-5 claim** (SL-0128) before any
+   publication-track use of "demonstrated on two substrates." This
+   entry's scope language is gated on it.
+2. **Pattern Commons #00 amendment** — adopting the payload-provenance
+   rule and the block-vs-fault principle at the general-seam level, and
+   deciding the series-wide convention for governance headers on public
+   entries (an open question raised at v0.2.1, F-B4). Gate for the
+   Lexicon v2.6 general-principle residual.
+3. **KL-12 closing evidence** — a run in which the *grant* lapses
+   (`grantAuthorityHorizon`), not the seam's own horizon; or an observed
+   `recallSemantics` change under a real protocol revision. Runs 7–8 are
+   not this.
+4. **KL-2 migration half** — CID-anchor stability under PDS migration;
+   never run.
+5. **Artifact B amendment session**, if the prototype evidence warrants
+   one — in its own session, by that evidence, not by this entry.
+6. **Phase 2 of the build — sync layer swap** (dialog-db / Hexane
+   horizon); the seam is written so that the sync layer is swappable.
 
 ---
 
 ## Changelog
+
+**v0.3 (2026-08-31).** Post-prototype revision under manifest r7.2 (Mode 1, single context, no Counter-Pass; ⚑ SINGLE-CONTEXT — NOT PANELED). Base: v0.2.1 at `ad115ca` (sha `695b83b8…`), fetched and sha-verified before editing. Every revision below is sourced to a primary read — Survival Ledger entries SL-0114, SL-0121, SL-0128, SL-0129, SL-0188, SL-0189 (tail SL-0194); `docs/observation-log-pc08.md` and `substrate-crossing/docs/CONVENTIONS.md` v0.4 at `fb05ea1`; UFO Lexicon v2.6 — not to handoffs or session memory. (1) Epistemic-position section rewritten: history kept ("authored before its prototype existed"), present state added; NI-5 line corrected from "in force" to CLOSED at two-substrate scope (SL-0128) with the Counter-Pass gate named. (2) Known Limits table gains a **Status** column; KL-1 CLOSED (SL-0121); KL-2 closed for PDS/firehose, AppView drop observed, migration half OPEN; KL-8a and KL-8c CLOSED (SL-0114), 8b open — the "displacing evidence required to relax" wording is retired per SL-0114's correction; KL-10 bounded in-evidence (SL-0189); KL-12 OPEN per Lexicon v2.5 L1; KL-5 row's "NI-5 discipline holds" clause removed. (3) All vocabulary tags updated from *(PROPOSED)* to registered v2.3 (SL-0129). (4) Routed lines 6 and 18b promoted from candidate text into design prose — 18b into the Grant Model ("What a grant authorizes — as implemented"), line 6 into the Gate ("Subset confinement — as implemented"); SL-0193 successor gate closed. (5) TOCTOU note extended with the as-implemented fire-time re-verification (Run 8). (6) How It Sits table evidence cell → prototype-verified on this stack. (7) Landscape empirical note extended through Phase 3; Dogwood asymmetry sentence unchanged. (8) Vocabulary Queue section replaced by a Promotion Record (what was proposed, where each item landed, what is still PROPOSED); V2-F6 divergence note marked resolved. (9) What Comes Next rewritten — old items discharged; six live items. (10) Phase 3 As-Implemented Terms retitled "registered (UFO Lexicon v2.6)"; the two principles marked seam-scoped. (11) Header: Status line reader-facing; Artifact B reference r2.4 → r2.10; stamp block and footer stamps refreshed. **Not decided here:** the series-wide convention for governance headers on public entries (F-B4) — scoped to PC#00 by operator ruling; this entry keeps the series convention. **Repo-side companion:** root `README.md` #8 line "Design intent, prototype-pending" → prototype-verified (same commit). No design verdict modified; no Counter-Pass verdict reopened.
 
 **v0.2.1 (2026-08-30).** Header only; no content change. Status line reduced to reader-facing text — the revision inventory it carried now lives solely in the v0.2 changelog entry below, where a v0.3 revision reads it. Stamp-block v0.2 sentence shortened. Hard line breaks (trailing spaces) added to the header metadata lines so Status, Date, Author, and the rest render as separate lines rather than one paragraph (whitespace-only; affects v0.1.4-era lines). Series-wide question of governance metadata in public headers deferred to v0.3 / PC#00.
 
@@ -914,12 +947,13 @@ Systems of Thought: AI-collaborative drafting, human authorial
 responsibility, intellectual direction held by the named author.*
 
 *⚑ SINGLE-CONTEXT — NOT PANELED. Form C cluster PROPOSED per UFO
-Lexicon v1.8. All new vocabulary PROPOSED pending promotion. NI-5: local-first
-specific on current evidence — zero generality claims in this entry.*
-*v0.2: Phase 3 as-implemented terms PROPOSED per UFO Lexicon v2.5 L4;
-`crossingGrantHorizon` REGISTERED (v2.5 L2). Rebased onto v0.1.4 (F-B3).
-Prototype-status prose known-stale, queued for v0.3 (F-B2, manifest r7).
-Ledger: SL-0122 carried; SL-0190 / SL-0191 validation events.*
+Lexicon v2.6. Substrate-crossing vocabulary registered (Lexicon v2.3,
+SL-0129); Phase 3 terms registered (v2.5 L2; v2.6 L8/L9, seam-scoped).
+NI-5 CLOSED at two-substrate scope (SL-0128) — no generality claim beyond
+it in this entry; Counter-Pass on the narrowed claim pending.*
+*v0.3: post-prototype revision from primary reads (ledger tail SL-0194;
+observation log and CONVENTIONS v0.4 at `fb05ea1`). Routed lines promoted
+(SL-0193 gate closed). Known Limits carry a Status column.*
 *Delivery-not-application enforced. Canonical files on operator's machine.*
 
-*UX Minds, LLC · J. Wright · August 18, 2026 · v0.2 / v0.2.1 August 30, 2026*
+*UX Minds, LLC · J. Wright · August 18, 2026 · v0.2 / v0.2.1 August 30, 2026 · v0.3 August 31, 2026*
