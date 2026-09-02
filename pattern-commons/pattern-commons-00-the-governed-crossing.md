@@ -1,12 +1,12 @@
 # Pattern Commons #0 — The Governed Crossing
 
-**Status:** v0.1.2 — Conformance and canonical status section added (2026-08-20); v0.1.1 — Counter-Pass applied 2026-08-10 (SL-0072): R1 narrowed (#4 reclassified as infrastructure); R2 care-domain candidacy conditioned on open grantor eligibility model; R3 (a) — altitude/Artifact B distinction holds (Item 1 §1.1 is a standalone Form C document, not inside Artifact B).
-**Date:** August 20, 2026
-**Author:** J. Wright (UX Minds, LLC) · AI-assisted
-**Series:** Local-first prototype series — Pattern Commons
-**Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam · #8 substrate-crossing seam
-**Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2)
-**Stamps:** CONTEXTUAL register. Form C cluster PROPOSED per UFO Lexicon v1.5. NI-5 in effect throughout. Counter-Pass complete (SL-0072, 2026-08-10).
+**Status:** v0.2 — two general seam principles adopted from the substrate-crossing seam's prototype evidence (Pattern Commons #8, Phase 3); a header convention for series entries stated and applied. Revision history in the Changelog.  
+**Date:** September 1, 2026 (v0.2) · August 20, 2026 (v0.1.2)  
+**Author:** J. Wright (UX Minds, LLC) · AI-assisted  
+**Series:** Local-first prototype series — Pattern Commons  
+**Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver (infrastructure) · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam · #8 substrate-crossing seam · #9 governed content production crossing  
+**Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2.10)  
+**Stamps:** CONTEXTUAL register. Form C cluster PROPOSED per UFO Lexicon v2.6. ⚑ SINGLE-CONTEXT — NOT PANELED (v0.1.2 and v0.2 additions; v0.1.1 Counter-Pass verdicts unchanged).
 
 ---
 
@@ -66,6 +66,18 @@ Every crossing attempt is checked at act time against the current capability sta
 Every gate-check invocation — pass or block — emits an evidence artifact. The record is a first-class output of the crossing, not an audit log appended afterward. The record names the grant, the party, the capability checked, the timestamp, and the result. A crossing with no record is not a governed crossing; it is an undeclared event the architecture cannot account for.
 
 A crossing is valid if and only if all four properties are satisfied at crossing time.
+
+---
+
+### What the record binds
+
+Two principles govern the relationship between the grant, the gate, and the record. Both were first observed as implementation discipline in the substrate-crossing seam (Pattern Commons #8, Phase 3) and are stated here at the level of the pattern; the seam-specific forms remain in that entry.
+
+**A seam publishes only what its own intent record describes.** Whatever crosses is built from the content the gate checked — never from a separately constructed object, a fixture, or a re-read taken after the check. The record's account of what crossed and the bytes that crossed are the same thing. A crossing whose output was assembled anywhere other than at the gate has a record that describes something else.
+
+**A block is not a fault.** A *block* is a gate outcome on an external condition — the content changed under the seam after it was checked, a horizon has not been reached or has passed, a digest does not match at the moment of firing. A block is logged as an event, nothing is written or fired, and the evidence posture is preserved. A *fault* is the seam breaking its own invariant on bytes it has just written. A fault is raised, not logged as a gate outcome, because a seam that records its own invariant violation as an ordinary block has corrupted the record it exists to produce. Domain entries name their own block conditions; the distinction itself is invariant.
+
+Both principles are PROPOSED at the general-seam level per UFO Lexicon v2.6 (registered there as seam-scoped terms for the substrate-crossing seam). This entry is the gate for their general reading.
 
 ---
 
@@ -139,7 +151,8 @@ The prior Pattern Commons domain entries (#1–#3, #5–#7) are instantiations o
 | #5 — Distributed seam | Social networking | Peer handshake; relay exits after sync | Distributed; relay-exits posture demonstrated |
 | #6 — CRDT as trust graph | Social | Trust assignment at connection | Graph-structural; trust as local-first state |
 | #7 — Employment seam | Labor / legal | Any state change in a working relationship | Legal and evidentiary; all four Seam Stack layers required; full participant model |
-| #8 — Substrate-crossing seam | Public substrate | Publication from local-first substrate to globally indexed regime | Epistemic regime change; exposure-unbounded; Phases 0–2 complete |
+| #8 — Substrate-crossing seam | Public substrate | Publication from local-first substrate to globally indexed regime | Epistemic regime change; exposure-unbounded; prototype-verified — Phases 0–3 complete, eight governed runs against a live PDS |
+| #9 — Governed content production crossing | Content production | Content object crosses from an author-controlled substrate to an externally legible surface at a declared tier-compliance threshold | Editorial and epistemic; the gate checks the content's own governed state, not only who crosses; design intent, no prototype |
 
 The employment seam (#7) is the most demanding instantiation — the one where the failure taxonomy is deepest, the participant model is most complex, and the legal substrate is part of the architecture rather than a wrapper around it. It is not the definition of the class. It is the proof that the class exists and that the architecture is sufficient to handle the hardest case.
 
@@ -190,7 +203,7 @@ Pattern Commons #0 specifies none of these. They are the work of the domain entr
 
 ## Boundary Principles
 
-The governed crossing is the architectural expression of a set of boundary principles derived from the local-first series and formalized in Artifact B (Form C). The principles are PROPOSED per UFO Lexicon v1.5 and carry the Form C cluster stamp.
+The governed crossing is the architectural expression of a set of boundary principles derived from the local-first series and formalized in Artifact B (Form C). The principles are PROPOSED per UFO Lexicon v2.6 and carry the Form C cluster stamp.
 
 **P8 — Every boundary crossing is explicit, minimal, and designed.**
 No ambient exfiltration. The crossing surface is scoped, its failure states enumerated. The local side loses nothing on failure.
@@ -212,9 +225,9 @@ The full boundary principles set is specified in Artifact B. This entry names th
 
 The Pattern Commons series does not claim that governed crossings are universal. It claims that the pattern applies wherever the structural condition — contextual knowledge at a boundary, legal or relational stakes at state change, no current architecture governing the event — is present.
 
-The series demonstrates the claim across four built domains and one highly specified domain (employment). It does not prove the claim for all domains. It provides sufficient evidence that the pattern is real, that the architecture is sufficient, and that the four constitutive properties hold across materially different contexts.
+The series demonstrates the claim across four built domains, one highly specified domain (employment), and one prototype-verified substrate crossing (#8). It does not prove the claim for all domains. It provides sufficient evidence that the pattern is real, that the architecture is sufficient, and that the four constitutive properties hold across materially different contexts.
 
-NI-5 applies: these claims are local-first-specific on current evidence. No substrate-generality claim is made beyond what the built prototypes demonstrate.
+The generality claim is bounded by the substrates actually built against: a local-first substrate and, through Pattern Commons #8, a globally indexed public substrate. No claim is made beyond those two; the earlier local-first-only limit (NI-5) closed at that narrowed scope, and a third regime remains unclaimed.
 
 ---
 
@@ -251,11 +264,27 @@ Future Pattern Commons entries that instantiate the governed crossing should:
 3. Name the seam trigger (what state change fires the crossing) explicitly
 4. Adopt `seam:CrossingRecord` as the base shape for all governed-event records
 
+### Conventions for series entries
+
+The header of a public Pattern Commons entry is for the reader, not for the governance record. It carries: **Status** (one reader-facing sentence naming the version and what it is), **Date**, **Author**, **Series**, **Companion entries**, **Governing architecture** (name and current revision), and one **Stamps** line limited to register, Lexicon version, and any active stamp name. Ledger references, finding identifiers, Counter-Pass narrative, and manifest references belong in the entry's Changelog, where a revision reads them. An entry's parent-pattern line cites this entry by version. Entries issued before this convention conform at their next revision; this entry conforms as of v0.2.
+
 Open items for future sessions:
 
 - **General failure taxonomy** — a domain-agnostic taxonomy of failure states for governed crossings, derived from the union of existing domain taxonomies
 - **Grantor eligibility model** — a general participant model specifying which classes are eligible grantors and which are eligible crossing parties across domains, from which domain entries derive their specific participant models
-- **PC#0 Counter-Pass** — this draft is SINGLE-CONTEXT and not paneled; a Counter-Pass in a fresh context is available before any publication-track use
+- **PC#0 Counter-Pass** — v0.1.1 was paneled (SL-0072). Everything added since — the v0.1.2 Conformance and Canonical Status section, and the v0.2 subsections What the record binds and Conventions for series entries — is SINGLE-CONTEXT and not paneled. A Counter-Pass on v0.2 covering those three additions is available before any publication-track use, and retires the stamp
+
+---
+
+## Changelog
+
+**v0.2 (2026-09-01).** Amendment session under PC#8 manifest r7.3 (Mode 1, single context; ⚑ SINGLE-CONTEXT — NOT PANELED). Base: v0.1.2 at `17be239` (sha `9ad20b6f…`), fetched and sha-verified before editing. (1) New subsection *What the record binds* under The Pattern: the payload-provenance rule and the block-vs-fault principle adopted at the general-seam level — the residual named by UFO Lexicon v2.6 ruling L9 (SL-0194 PC#00-half). Seam-scoped forms remain in PC#8 v0.3. (2) New subsection *Conventions for series entries* under What Comes Next: the public-header convention (F-B4 / PC#8 v0.3 ruling G2, scoped here by operator ruling); applied to this entry's own header in the same revision. (3) Header: Status reader-facing; Lexicon reference v1.5 → v2.6 (also in Boundary Principles); Artifact B reference r2 → r2.10; "NI-5 in effect" removed. (4) Prior Instantiations as Evidence: NI-5 wording replaced with the two-substrate bound (SL-0128); #8 counted as prototype-verified. (5) Domain Instances #8 row → Phases 0–3 complete. (6) Companion entries: #4 marked infrastructure, matching the reclassification already in the body; #9 added (absent since its issuance) and given a Domain Instances row. No Counter-Pass verdict from SL-0072 modified. Routed design lines 6 and 18b from the PC#8 reconciliation are not lifted here — they are seam-scoped design principles (Lexicon v2.6 L10) and stay in PC#8.
+
+**v0.1.2 (2026-08-20).** Conformance and Canonical Status section added.
+
+**v0.1.1 (2026-08-10).** Counter-Pass applied (SL-0072): R1 narrowed (#4 reclassified as infrastructure); R2 care-domain candidacy conditioned on the open grantor eligibility model; R3 (a) — altitude/Artifact B distinction holds (Item 1 §1.1 is a standalone Form C document, not inside Artifact B).
+
+**v0.1 (2026-08-09).** Initial draft.
 
 ---
 
@@ -263,4 +292,4 @@ Open items for future sessions:
 
 *The governed crossing pattern and the Seam Stack are documented at [seamstack.org](https://seamstack.org). The governing manifesto-spec is Artifact B — Form C (r2), available in the local-first-series repository.*
 
-*UX Minds, LLC · J. Wright · August 20, 2026*
+*UX Minds, LLC · J. Wright · September 1, 2026*
