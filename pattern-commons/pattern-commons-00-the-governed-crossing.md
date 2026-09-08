@@ -12,6 +12,8 @@
 
 **Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2.10)  
 
+**Plain Language Version:** For a plain language overview, [see here](https://github.com/jediwright/systems-of-thought/edit/main/start-here/the-governed-crossing-in-plain-language.md)
+
 ---
 
 ## The Pattern in One Sentence
