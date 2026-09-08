@@ -332,9 +332,9 @@ Neither note adds a trigger to *What fires a governed crossing*. The only thing 
 
 The Pattern Commons series has been building toward this document without naming it. Each entry demonstrated a governed crossing in a domain-specific context. The employment seam forced all four Seam Stack layers into view simultaneously, making the generalization unavoidable.
 
-Pattern Commons #0 is not the most important entry in the series. Pattern Commons #7 is — because it is the entry where the stakes are highest, the architecture is most fully specified, and the political argument of Full Personhood is demonstrated at the data floor.
+Pattern Commons #00 is not the most important entry in the series. Pattern Commons #7 is — because it is the entry where the stakes are highest, the architecture is most fully specified, and the political argument of Full Personhood is demonstrated at the data floor.
 
-Pattern Commons #0 is the entry that makes the series legible as a series. It is the abstract pattern that the domain entries instantiate, the root that the tree was already growing from, named at last.
+Pattern Commons #00 is the entry that makes the series legible as a series. It is the abstract pattern that the domain entries instantiate, the root that the tree was already growing from, named at last.
 
 ---
 
@@ -342,7 +342,7 @@ Pattern Commons #0 is the entry that makes the series legible as a series. It is
 
 Future Pattern Commons entries that instantiate the governed crossing should:
 
-1. Cite Pattern Commons #0 as the parent pattern
+1. Cite Pattern Commons #00 as the parent pattern
 2. Specify only what diverges from the four constitutive properties and the Seam Stack — participant model, failure taxonomy, legal substrate, bundle schema, identity ceremony
 3. Name the seam trigger (what state change fires the crossing) explicitly
 4. Adopt `seam:CrossingRecord` as the base shape for all governed-event records
@@ -355,7 +355,7 @@ Open items for future sessions:
 
 - **General failure taxonomy** — a domain-agnostic taxonomy of failure states for governed crossings, derived from the union of existing domain taxonomies
 - **Grantor eligibility model** — a general participant model specifying which classes are eligible grantors and which are eligible crossing parties across domains, from which domain entries derive their specific participant models
-- **Independent review of v0.3** — v0.1.1 went through independent adversarial review. Everything added or reworded since — the v0.1.2 Conformance and Canonical Status section; the v0.2 subsections What the record binds and Conventions for series entries; the reworded generality claim in Prior Instantiations as Evidence; and the updated Domain Instances rows for #8 and #9; and the v0.3 Application Notes section — has not. A review of v0.3 covering those changes is due before any wider publication
+- **Independent review of v0.3** — v0.1.1 went through independent adversarial review. Everything added or reworded since — the v0.1.2 Conformance and Canonical Status section; the v0.2 subsections What the record binds and Conventions for series entries; the reworded generality claim in Prior Instantiations as Evidence; the updated Domain Instances rows for #8 and #9; and the v0.3 Application Notes section — has not. A review of v0.3 covering those changes is due before any wider publication
 
 ---
 
