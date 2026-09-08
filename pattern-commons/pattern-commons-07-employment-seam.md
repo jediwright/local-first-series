@@ -1,10 +1,15 @@
 # Pattern Commons #7 — The Employment Seam
 
 **Status:** Draft v0.5
+
 **Date:** August 8, 2026
+
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted
+
 **Derived from:** onoff.work concept board (Miro); v0.1 spec refinement session, April 29, 2026; v0.2 framing session, April 30, 2026 (AM); v0.3 technical specification session, April 30, 2026 (PM); v0.4 secondary-question resolution sessions, April 30, 2026 (PM, continued) and May 1, 2026; v0.4.1 quality-pass tightenings, May 1, 2026; v0.5 agent-as-governed-party authoring session, August 8, 2026 (applying the Panel Pass-reconciled candidate entry of August 7–8, 2026).
+
 **Series:** Local-first prototype series — Pattern Commons
+
 **Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver · #5 distributed seam · #6 CRDT as trust graph
 
 ---
