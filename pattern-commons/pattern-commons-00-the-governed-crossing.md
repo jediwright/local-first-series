@@ -60,10 +60,10 @@ The crossing is explicit and minimal. The surface at which interior state meets 
 Authority to cross is issued by an eligible grantor party to an eligible crossing party. The grant is the legal-responsibility anchor: the crossing is attributable to the grant, and the grant is attributable to the grantor. No crossing without a grant; no grant without an issuer who can be held accountable.
 
 **3. A gate.**
-Every crossing attempt is checked at act time against the current capability state of the relevant grant. The gate fails closed: an unconfirmed revocation blocks; silence blocks. The gate does not read from a cached token or a TTL. It checks the current state at the moment of invocation.
+Every crossing attempt is checked at runtime against the current capability state of the relevant grant. The gate fails closed: an unconfirmed revocation blocks; silence blocks. The gate does not read from a cached token or a TTL. It checks the current state at the moment of invocation.
 
 **4. A record.**
-Every gate-check invocation — pass or block — emits an evidence artifact. The record is a first-class output of the crossing, not an audit log appended afterward. The record names the grant, the party, the capability checked, the timestamp, and the result. A crossing with no record is not a governed crossing; it is an undeclared event the architecture cannot account for.
+Every gate-check invocation — pass or block — emits an evidence artifact. The record is a first-class output of the crossing, not an audit log appended afterward. The record includes the grant, the party, the checked capability, the timestamp, and the result. A crossing with no record is not a governed crossing; it is an undeclared event the architecture cannot account for.
 
 A crossing is valid if and only if all four properties are satisfied at crossing time.
 
@@ -71,11 +71,11 @@ A crossing is valid if and only if all four properties are satisfied at crossing
 
 ### What the record binds
 
-Two principles govern the relationship between the grant, the gate, and the record. Both were first observed as implementation discipline in the substrate-crossing seam (Pattern Commons #8, Phase 3) and are stated here at the level of the pattern; the seam-specific forms remain in that entry.
+Two principles govern the relationship between the grant, the gate, and the record. Both were first observed as implementation discipline in the substrate-crossing seam (Pattern Commons #8, Phase 3) and are stated here at the pattern level; the seam-specific forms remain in that entry.
 
 **A seam publishes only what its own intent record describes.** Whatever crosses is built from the content the gate checked — never from a separately constructed object, a fixture, or a re-read taken after the check. The record's account of what crossed and the bytes that crossed are the same thing. A crossing whose output was assembled anywhere other than at the gate has a record that describes something else.
 
-**A block is not a fault.** A *block* is a gate outcome on an external condition — the content changed under the seam after it was checked, a horizon has not been reached or has passed, a digest does not match at the moment of firing. A block is logged as an event, nothing is written or fired, and the evidence posture is preserved. A *fault* is the seam breaking its own invariant on bytes it has just written. A fault is raised, not logged as a gate outcome, because a seam that records its own invariant violation as an ordinary block has corrupted the record it exists to produce. Domain entries name their own block conditions; the distinction itself is invariant.
+**A block is not a fault.** A *block* is a gate outcome on an external condition — the content changed under the seam after it was checked, a horizon has not been reached or has passed, or a digest does not match at the moment of firing. A block is logged as an event, nothing is written or fired, and the evidence posture is preserved. A *fault* is the seam breaking its own invariant on bytes it has just written. A fault is raised, not logged as a gate outcome, because a seam that records its own invariant violation as an ordinary block has corrupted the record it exists to produce. Domain entries name their own block conditions; the distinction itself is invariant.
 
 Both principles are PROPOSED at the general-seam level per UFO Lexicon v2.6 (registered there as seam-scoped terms for the substrate-crossing seam). This entry is the gate for their general reading.
 
@@ -100,7 +100,7 @@ A governed crossing fires whenever the legal, evidentiary, or relational status 
 - When a party exits a relationship (separation, contract close, transaction complete, connection severed, engagement ended)
 - When a relay party enters or exits a chain (a sub-contractor onboarding to a project, an agent receiving a delegated capability grant, a new party joining an existing governed relationship)
 
-The triggering condition is state change, not termination. This is the distinction the prior entries in the series made implicitly. Pattern Commons #0 makes it explicit.
+The triggering condition is a state change, not termination. This is the distinction the prior entries in the series made implicitly. Pattern Commons #0 makes it explicit.
 
 ---
 
@@ -140,7 +140,7 @@ IRI namespace: `https://jediwright.github.io/seam-stack/vocab/crossing-record/0.
 
 ## The Domain Instances
 
-The prior Pattern Commons domain entries (#1–#3, #5–#7) are instantiations of the governed crossing. They differ from each other in domain, legal substrate, participant model, and failure taxonomy. They share the four constitutive properties, the inversion, and the Seam Stack. Entry #4 is retained in the table below as supporting infrastructure — the "pattern, not domain" classification its stakes entry already carries — and is excluded from the invariance claim.
+The prior Pattern Commons domain entries (#1–#3, #5–#7) are instantiations of the governed crossing. They differ in domain, legal substrate, participant model, and failure taxonomy. They share the four constitutive properties, the inversion, and the Seam Stack. Entry #4 is retained in the table below as supporting infrastructure — the "pattern, not domain" classification its stakes entry already carries — and is excluded from the invariance claim.
 
 | Entry | Domain | Seam trigger | Stakes |
 |---|---|---|---|
@@ -154,7 +154,7 @@ The prior Pattern Commons domain entries (#1–#3, #5–#7) are instantiations o
 | #8 — Substrate-crossing seam | Public substrate | Publication from local-first substrate to globally indexed regime | Epistemic regime change; exposure-unbounded; prototype-verified — Phases 0–3 complete, eight governed runs against a live PDS |
 | #9 — Governed content production crossing | Content production | Content object crosses from an author-controlled substrate to an externally legible surface at a declared tier-compliance threshold | Editorial and epistemic; the gate checks the content's own governed state, not only who crosses; design intent, no prototype |
 
-The employment seam (#7) is the most demanding instantiation — the one where the failure taxonomy is deepest, the participant model is most complex, and the legal substrate is part of the architecture rather than a wrapper around it. It is not the definition of the class. It is the proof that the class exists and that the architecture is sufficient to handle the hardest case.
+The employment seam (#7) is the most demanding instantiation — the one where the failure taxonomy is deepest, the participant model is most complex, and the legal substrate is part of the architecture rather than a wrapper around it. It is not the class's definition. It is the proof that the class exists and that the architecture is sufficient to handle the hardest case.
 
 ---
 
@@ -171,19 +171,19 @@ The employment seam is the highest-stakes instantiation identified to date, but 
 
 **Platform-worker relationships** — gig economy, platform-mediated labor, algorithmic assignment and de-assignment. The seam fires per engagement. The platform is structurally the relay, not the owner of the relationship.
 
-**Client-agency relationships** — a designer, strategist, or embedded consultant entering and exiting a client engagement. Knowledge artifacts produced during the engagement should write to a substrate the practitioner owns. The seam fires at kickoff, at handoff, and at contract close.
+**Client-agency relationships** — a designer, strategist, or embedded consultant entering and exiting a client engagement. Knowledge artifacts produced during the engagement should be written to a substrate the practitioner owns. The seam fires at kickoff, at handoff, and at contract close.
 
-**Research and academic affiliations** — a postdoc, visiting researcher, or lab contractor. The data, code, and institutional context produced during the affiliation is exactly what gets stranded at exit under conventional architectures. The governed crossing disciplines that handoff.
+**Research and academic affiliations** — a postdoc, visiting researcher, or lab contractor. The data, code, and institutional context produced during the affiliation are exactly what gets stranded at exit under conventional architectures. The governed crossing disciplines that hand off.
 
-**AI agent delegation** — an agent is granted a capability scoped to a context, acts on behalf of a principal, and the grant expires or revokes. The seam fires per delegation scope. The gate checks capability state at invocation. The crossing record names the agent DID, the grant reference, and the result. This is Pattern Commons #7's Class G instantiated at the pattern level.
+**AI agent delegation** — an agent is granted a capability scoped to a context, acts on behalf of a principal, and the grant expires or is revoked. The seam fires per delegation scope. The gate checks capability state at invocation. The crossing record names the agent DID, the grant reference, and the result. This is Pattern Commons #7's Class G instantiated at the pattern level.
 
 **Creative and IP relationships** — a producer attached to a project, a writer under contract, a collaborator under a work-for-hire clause. The IP boundary event at project close is a governed crossing. The record is the legal anchor.
 
-**Care relationships** — a home health aide, personal assistant, or support worker. Informal, rarely documented, high-stakes at transition. The governed crossing provides the architecture for contemporaneous, tamper-evident records where no formal process currently exists. Candidate status here is conditional on the grantor eligibility model (see Open Items): where the care recipient's capacity is compromised and no formal proxy exists, the eligible grantor is currently indeterminate, and the grant property's accountability anchor is unresolved for that sub-case.
+**Care relationships** — a home health aide, personal assistant, or support worker. Informal, rarely documented, high-stakes at transition. The governed crossing provides the architecture for contemporaneous, tamper-evident records where no formal process currently exists. Candidate status here is conditional on the grantor eligibility model (see Open Items): where the care recipient's capacity is compromised, and no formal proxy exists, the eligible grantor is currently indeterminate, and the grant property's accountability anchor is unresolved for that sub-case.
 
-**Volunteer and civic roles** — board members, committee chairs, open-source maintainers. The knowledge transfer problem is structurally identical to employment. The formal process is thinner or absent. The governed crossing is the architectural response regardless of whether the relationship is compensated.
+**Volunteer and civic roles** — board members, committee chairs, open-source maintainers. The knowledge transfer problem is structurally identical to the employment problem. The formal process is thinner or absent. The governed crossing is the architectural response regardless of whether the relationship is compensated.
 
-What these share is not a domain. They share a structural condition: a party with contextual knowledge or capability, a boundary event where that knowledge or capability is at risk of being stranded, and no architecture currently governing what happens at the crossing. The governed crossing is the architecture that applies.
+What these share is not a domain. They share a structural condition: a party with contextual knowledge or capability, a boundary event where that knowledge or capability is at risk of being stranded, and no architecture currently governing what happens at the crossing. The governed crossing is the applicable architecture.
 
 ---
 
@@ -251,7 +251,7 @@ An application note is PC#00 applied to a kind of system the domain entries did 
 
 ### Application note A — Shared workspaces written by teams of agents
 
-**Source:** *Governed Coordination Principles* working note, v0.1.4 (2026-09-06). For each principle the note gives what it requires in practice, the failure it prevents, how it fares in the cases, and the existing instrument it draws on; only the principle statements are repeated here.
+**Source:** *Governed Coordination Principles* working note, v0.1.4 (2026-09-06). For each principle, the note gives what it requires in practice, the failure it prevents, how it fares in the cases, and the existing instrument it draws on; only the principle statements are repeated here.
 
 **The setting.** Any shared workspace where more than one non-human actor writes to state that a human or another actor will later depend on — a shared repository, a shared result pool, a shared task queue. The 2026 cases the note reads (an agent-team compiler build on a plain git repository; a public math-results arena; a plug-in agent harness) show coordination working without an orchestrator or a permission model. What they do not answer are the four questions a deferred party asks of any crossing:
 
@@ -260,7 +260,7 @@ An application note is PC#00 applied to a kind of system the domain entries did 
 3. **Crossing** — what exactly moved from one party's hands into the shared work, and on what basis?
 4. **Evidence** — what survives that someone who wasn't there could check?
 
-These are the Seam Stack's four layer questions asked of a system with no seam. In the first two cases — the compiler build and the results arena — the current answers are, respectively: everywhere, everyone, a commit message, and not much.
+These are the Seam Stack's four-layer questions asked of a system with no seam. In the first two cases — the compiler build and the results arena — the current answers are, respectively: everywhere, everyone, a commit message, and not much.
 
 **The principles.**
 
@@ -268,22 +268,22 @@ These are the Seam Stack's four layer questions asked of a system with no seam. 
 - **GC-1 — Shared state has one declared home.** For every shared workspace, one place is canonical, and everything else is a copy, a relay, or a view. The declaration is written down before agents start writing.
 - **GC-2 — Every actor is a party with standing, checked at act time.** Any actor that writes to the shared workspace is a governed party with its own contact class, its own capability grant, and its own revocation semantics. Capabilities are checked when the actor acts, not when it was let in.
 - **GC-3 — Task claiming is a crossing and fires a record.** When an actor takes ownership of a unit of work, that is a state change in the relationship between the actor and the shared work. It fires a crossing record.
-- **GC-4 — Verification is a claim with a basis, never a summary impression.** "Tests pass" is a point-in-time observation about the checks that ran. It is not the same as "done." Every governed change carries the list of checks that were run, the checks that were known but not run, and the checks that were unknown.
+- **GC-4 — Verification is a claim with a basis, never a summary impression.** "Tests pass" is a point-in-time observation about the checks that ran. It is not the same as "done." Every governed change includes the list of checks that were run, those that were known but not run, and those that were unknown.
 - **GC-5 — Borrowed ideas carry lineage.** When an actor builds on another actor's output, the dependency is recorded as a lineage link with a chain reference, chain depth, and anchor type — not left to be reconstructed from discussion threads.
 - **GC-6 — The record outlives the platform.** The evidence of a governed crossing is a first-class output, readable by a party who has no access to the platform that hosted the coordination.
 - **GC-7 — Governance is itself a protected surface.** The grant model, the protected-surface list, the gate logic, and the verification battery are the highest-tier surfaces in the workspace. Changes to them are always governed, never delegated to an agent's own discretion, and never emergency-bypassed without a retrospective record.
 
 **The ladder.** Not all seven apply at once. In order of cost: rung 1, GC-0 and GC-7 (a written protected-surface list, with the governance config on it); rung 2, GC-4 (a `not_run` state, acceptance criteria before code, verdicts tagged with the artifact version and check identity they were issued on, and issued only on a settled basis); rung 3, GC-2 (contact class, scoped grant, act-time check); rung 4, GC-3 and GC-5 (claim and release records, lineage fields); rung 5, GC-1 and GC-6 (a declared canonical home, exportable records). Rungs 1–2 can be adopted on a plain git repository today. Rung 3 is where the employment seam's agent-party primitives transpose. Rungs 4–5 require the crossing-record vocabulary.
 
-**The cases, one sentence each.** The compiler build had the lock-file *mechanism* for task claiming but carried none of the claim's terms — all sixteen agents wrote under one author string, so no later misbehaviour can be isolated from the record. The results arena has a verifier as a gate on results but no differentiated standing for agents, does not store rejected submissions, and does not record borrowing as lineage — the chain behind its headline result is post-hoc reconstruction, not record. The plug-in harness keeps the closest existing per-session log of claim and rejection events, but its approval policy sits on the same patchable layering as the loop it constrains, with nothing naming it a protected surface.
+**The cases, one sentence each.** The compiler build had the lock-file *mechanism* for task claiming but carried none of the claim's terms — all sixteen agents wrote under one author string, so no later misbehavior can be isolated from the record. The results arena has a verifier as a gate on results but no differentiated standing for agents, does not store rejected submissions, and does not record borrowing as lineage — the chain behind its headline result is post-hoc reconstruction, not record. The plug-in harness keeps the closest existing per-session log of claim and rejection events, but its approval policy sits on the same patchable layering as the loop it constrains, with nothing naming it a protected surface.
 
-**Worked example — record semantics under adversarial pressure.** GC-4's strongest clause, that a verdict on the wrong version of an artifact is void rather than merely stale, was put under adversarial review and narrowed in three ways: the verdict is scoped to the artifact version and check identity it was issued on, and a revised check is a new check identity — verdicts issued under the prior check are retained as verdicts on that check and do not carry over; the verdict is voided only as a basis for admitting the change, with the basis itself retained, tagged with its version, and used to re-derive rather than reuse, with any verdict record kept as a record of what was issued rather than as working state; and the rule applies only to verdicts issued against a fixed artifact and, where the basis is a sequence of operations, a settled prefix of it, with verdicts against a still-moving basis held provisional, carrying the point at which that basis is expected to settle, until it does. Each restriction is a constraint on what a crossing record says about a verdict. None adds a trigger, a party, or a crossing shape to this entry. That is the ground on which the note is an application of PC#00 rather than a sibling. The exact wording of the three restrictions is in the source note at GC-4 (d.1)–(d.3); this entry does not adopt the terms they introduce.
+**Worked example — record semantics under adversarial pressure.** GC-4's strongest clause, that a verdict on the wrong version of an artifact is void rather than merely stale, was put under adversarial review and narrowed in three ways: the verdict is scoped to the artifact version and check identity it was issued on, and a revised check is a new check identity — verdicts issued under the prior check are retained as verdicts on that check and do not carry over; the verdict is voided only as a basis for admitting the change, with the basis itself retained, tagged with its version, and used to re-derive rather than reuse, with any verdict record kept as a record of what was issued rather than as working state; and the rule applies only to verdicts issued against a fixed artifact and, where the basis is a sequence of operations, a settled prefix of it, with verdicts against a still-moving basis held provisional, carrying the point at which that basis is expected to settle, until it does. Each restriction is a constraint on what a crossing record says about a verdict. None adds a trigger, a party, or a crossing shape to this entry. That is the ground on which the note is an application of PC#00 rather than a sibling. The exact wording of the three restrictions appears in the source note at GC-4 (d.1)–(d.3); this entry does not adopt the terms it introduces.
 
 ### Application note B — Convergent shared state
 
 **Source:** *Governance Convergence* working note, v0.1.6 (2026-09-06). "Governance Convergence" is the note's working title for the composition it describes, not a defined term; "invariant gap" names a problem identified by others; "heap" is Livelymerge's own term. The note holds the primary-source readings (the Livelymerge lab notes, Coln, the Kleppmann move operation, ECROs) and the open questions.
 
-**The setting.** Systems where shared state converges automatically without a finality arbiter, more than one party — human or agent — writes to it, and some party will later depend on the converged state being *correct*, not merely *consistent*. The motivating instance is Livelymerge's live programming environment (Ink & Switch, 2026), which keeps every object, class, and method as Automerge data. Its lab note *Convergence Is Not Enough* (2026-07-27) reports two clients concurrently editing a linked list, Automerge converging both exactly as promised, and the result being a corrupted list. Paraphrased: the merge replays effects, not intents, and the invariants the programmer relied on were never written down anywhere the CRDT could see. The working note calls this the **invariant gap**.
+**The setting.** Systems where shared state converges automatically without a finality arbiter, more than one party — human or agent — writes to it, and some party will later depend on the converged state being *correct*, not merely *consistent*. The motivating instance is Livelymerge's live programming environment (Ink & Switch, 2026), which keeps every object, class, and method as Automerge data. Its lab note *Convergence Is Not Enough* (2026-07-27) reports two clients concurrently editing a linked list, with Automerge converging both exactly as promised, resulting in a corrupted list. Paraphrased: the merge replays effects, not intents, and the invariants the programmer relied on were never written down anywhere the CRDT could see. The working note refers to this as the **invariant gap**.
 
 **Restated as a Crossing-question failure.** Asked the four seam questions, the failure has a precise location:
 
@@ -292,7 +292,7 @@ These are the Seam Stack's four layer questions asked of a system with no seam. 
 | **State** | The Automerge heap is canonical; each client's view is a replica. GC-1 holds by construction. |
 | **Standing** | Both clients had full write authority. Nothing about standing would have prevented the corruption; GC-2 does not bite. |
 | **Crossing** | One client's writes were computed against a state that no longer existed after the merge. The *basis* of those writes — the precondition assumed — was never recorded. **This is the gap.** |
-| **Evidence** | A deferred party sees a corrupted list and a valid change history. The right record was never defined, so GC-6 fails on definition, not on absence. |
+| **Evidence** | A deferred party sees a corrupted list and a valid change history. The right record was never defined, so GC-6 fails for lack of definition, not for absence. |
 
 The operation crossed from one party's local reasoning into the shared work, carrying its effects but not its basis. Everything else in the stack was working. That locates the problem at the Boundary layer, where this entry lives, rather than only at the Substrate layer, where Livelymerge is looking. Both locations may be right; they are not the same location.
 
@@ -324,7 +324,7 @@ Neither note adds a trigger to *What fires a governed crossing*. The only thing 
 
 ## How This Sits in the Series
 
-The Pattern Commons series has been building toward this document without naming it. Each entry demonstrated a governed crossing in a domain-specific context. The employment seam forced all four Seam Stack layers into view simultaneously and made the generalization unavoidable.
+The Pattern Commons series has been building toward this document without naming it. Each entry demonstrated a governed crossing in a domain-specific context. The employment seam forced all four Seam Stack layers into view simultaneously, making the generalization unavoidable.
 
 Pattern Commons #0 is not the most important entry in the series. Pattern Commons #7 is — because it is the entry where the stakes are highest, the architecture is most fully specified, and the political argument of Full Personhood is demonstrated at the data floor.
 
