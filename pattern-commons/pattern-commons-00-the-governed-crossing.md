@@ -1,12 +1,12 @@
 # Pattern Commons #0 — The Governed Crossing
 
-**Status:** v0.2 — two general seam principles adopted from the substrate-crossing seam's prototype evidence (Pattern Commons #8, Phase 3); a header convention for series entries stated and applied. Revision history in the Changelog.  
-**Date:** September 1, 2026 (v0.2) · August 20, 2026 (v0.1.2)  
+**Status:** v0.3 — two application notes folded in: PC#00 applied to shared workspaces written by teams of agents and to convergent shared state, each condensed from a longer working note. Revision history in the Changelog.  
+**Date:** September 6, 2026 (v0.3) · September 1, 2026 (v0.2) · August 20, 2026 (v0.1.2)  
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted  
 **Series:** Local-first prototype series — Pattern Commons  
 **Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver (infrastructure) · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam · #8 substrate-crossing seam · #9 governed content production crossing  
 **Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2.10)  
-**Stamps:** CONTEXTUAL register. Form C cluster PROPOSED per UFO Lexicon v2.6. ⚑ SINGLE-CONTEXT — NOT PANELED (v0.1.2 and v0.2 additions; v0.1.1 Counter-Pass verdicts unchanged).
+**Stamps:** CONTEXTUAL register. Form C cluster PROPOSED per UFO Lexicon v2.6. ⚑ SINGLE-CONTEXT — NOT PANELED (additions since v0.1.1 not yet independently reviewed).
 
 ---
 
@@ -245,6 +245,83 @@ The generality claim is bounded by the substrates actually built against: a loca
 
 ---
 
+## Application Notes
+
+An application note is PC#00 applied to a kind of system the domain entries did not cover. It adds no constitutive property, no layer, no trigger, and no vocabulary of its own. It shows how the four seam questions fall in that setting and which of the pattern's existing instruments answer them. Each note below condenses a longer working note that carries the full argument, sources, and open questions. Neither was given an entry number of its own: on review, both narrowed *toward* this entry's existing crossing-record vocabulary rather than away from it, which is what makes them applications of the pattern rather than siblings to it. The conditions under which the second would earn its own entry are recorded in its source note; for the first, only in the author's working records. "Invariant gap" and "Governance Convergence" are working labels from those notes, not defined terms of this entry.
+
+### Application note A — Shared workspaces written by teams of agents
+
+**Source:** *Governed Coordination Principles* working note, v0.1.4 (2026-09-06). For each principle the note gives what it requires in practice, the failure it prevents, how it fares in the cases, and the existing instrument it draws on; only the principle statements are repeated here.
+
+**The setting.** Any shared workspace where more than one non-human actor writes to state that a human or another actor will later depend on — a shared repository, a shared result pool, a shared task queue. The 2026 cases the note reads (an agent-team compiler build on a plain git repository; a public math-results arena; a plug-in agent harness) show coordination working without an orchestrator or a permission model. What they do not answer are the four questions a deferred party asks of any crossing:
+
+1. **State** — where does the shared state live, and who owns it?
+2. **Standing** — who was allowed to act on it, and was that permission current when they acted?
+3. **Crossing** — what exactly moved from one party's hands into the shared work, and on what basis?
+4. **Evidence** — what survives that someone who wasn't there could check?
+
+These are the Seam Stack's four layer questions asked of a system with no seam. In the first two cases — the compiler build and the results arena — the current answers are, respectively: everywhere, everyone, a commit message, and not much.
+
+**The principles.**
+
+- **GC-0 — Govern the crossings, not the keystrokes.** Governance attaches only where a wrong decision would propagate silently. Everything else stays ungoverned by design.
+- **GC-1 — Shared state has one declared home.** For every shared workspace, one place is canonical, and everything else is a copy, a relay, or a view. The declaration is written down before agents start writing.
+- **GC-2 — Every actor is a party with standing, checked at act time.** Any actor that writes to the shared workspace is a governed party with its own contact class, its own capability grant, and its own revocation semantics. Capabilities are checked when the actor acts, not when it was let in.
+- **GC-3 — Task claiming is a crossing and fires a record.** When an actor takes ownership of a unit of work, that is a state change in the relationship between the actor and the shared work. It fires a crossing record.
+- **GC-4 — Verification is a claim with a basis, never a summary impression.** "Tests pass" is a point-in-time observation about the checks that ran. It is not the same as "done." Every governed change carries the list of checks that were run, the checks that were known but not run, and the checks that were unknown.
+- **GC-5 — Borrowed ideas carry lineage.** When an actor builds on another actor's output, the dependency is recorded as a lineage link with a chain reference, chain depth, and anchor type — not left to be reconstructed from discussion threads.
+- **GC-6 — The record outlives the platform.** The evidence of a governed crossing is a first-class output, readable by a party who has no access to the platform that hosted the coordination.
+- **GC-7 — Governance is itself a protected surface.** The grant model, the protected-surface list, the gate logic, and the verification battery are the highest-tier surfaces in the workspace. Changes to them are always governed, never delegated to an agent's own discretion, and never emergency-bypassed without a retrospective record.
+
+**The ladder.** Not all seven apply at once. In order of cost: rung 1, GC-0 and GC-7 (a written protected-surface list, with the governance config on it); rung 2, GC-4 (a `not_run` state, acceptance criteria before code, verdicts tagged with the artifact version and check identity they were issued on, and issued only on a settled basis); rung 3, GC-2 (contact class, scoped grant, act-time check); rung 4, GC-3 and GC-5 (claim and release records, lineage fields); rung 5, GC-1 and GC-6 (a declared canonical home, exportable records). Rungs 1–2 can be adopted on a plain git repository today. Rung 3 is where the employment seam's agent-party primitives transpose. Rungs 4–5 require the crossing-record vocabulary.
+
+**The cases, one sentence each.** The compiler build had the lock-file *mechanism* for task claiming but carried none of the claim's terms — all sixteen agents wrote under one author string, so no later misbehaviour can be isolated from the record. The results arena has a verifier as a gate on results but no differentiated standing for agents, does not store rejected submissions, and does not record borrowing as lineage — the chain behind its headline result is post-hoc reconstruction, not record. The plug-in harness keeps the closest existing per-session log of claim and rejection events, but its approval policy sits on the same patchable layering as the loop it constrains, with nothing naming it a protected surface.
+
+**Worked example — record semantics under adversarial pressure.** GC-4's strongest clause, that a verdict on the wrong version of an artifact is void rather than merely stale, was put under adversarial review and narrowed in three ways: the verdict is scoped to the artifact version and check identity it was issued on, and a revised check is a new check identity — verdicts issued under the prior check are retained as verdicts on that check and do not carry over; the verdict is voided only as a basis for admitting the change, with the basis itself retained, tagged with its version, and used to re-derive rather than reuse, with any verdict record kept as a record of what was issued rather than as working state; and the rule applies only to verdicts issued against a fixed artifact and, where the basis is a sequence of operations, a settled prefix of it, with verdicts against a still-moving basis held provisional, carrying the point at which that basis is expected to settle, until it does. Each restriction is a constraint on what a crossing record says about a verdict. None adds a trigger, a party, or a crossing shape to this entry. That is the ground on which the note is an application of PC#00 rather than a sibling. The exact wording of the three restrictions is in the source note at GC-4 (d.1)–(d.3); this entry does not adopt the terms they introduce.
+
+### Application note B — Convergent shared state
+
+**Source:** *Governance Convergence* working note, v0.1.6 (2026-09-06). "Governance Convergence" is the note's working title for the composition it describes, not a defined term; "invariant gap" names a problem identified by others; "heap" is Livelymerge's own term. The note holds the primary-source readings (the Livelymerge lab notes, Coln, the Kleppmann move operation, ECROs) and the open questions.
+
+**The setting.** Systems where shared state converges automatically without a finality arbiter, more than one party — human or agent — writes to it, and some party will later depend on the converged state being *correct*, not merely *consistent*. The motivating instance is Livelymerge's live programming environment (Ink & Switch, 2026), which keeps every object, class, and method as Automerge data. Its lab note *Convergence Is Not Enough* (2026-07-27) reports two clients concurrently editing a linked list, Automerge converging both exactly as promised, and the result being a corrupted list. Paraphrased: the merge replays effects, not intents, and the invariants the programmer relied on were never written down anywhere the CRDT could see. The working note calls this the **invariant gap**.
+
+**Restated as a Crossing-question failure.** Asked the four seam questions, the failure has a precise location:
+
+| Seam question | In Livelymerge's case |
+|---|---|
+| **State** | The Automerge heap is canonical; each client's view is a replica. GC-1 holds by construction. |
+| **Standing** | Both clients had full write authority. Nothing about standing would have prevented the corruption; GC-2 does not bite. |
+| **Crossing** | One client's writes were computed against a state that no longer existed after the merge. The *basis* of those writes — the precondition assumed — was never recorded. **This is the gap.** |
+| **Evidence** | A deferred party sees a corrupted list and a valid change history. The right record was never defined, so GC-6 fails on definition, not on absence. |
+
+The operation crossed from one party's local reasoning into the shared work, carrying its effects but not its basis. Everything else in the stack was working. That locates the problem at the Boundary layer, where this entry lives, rather than only at the Substrate layer, where Livelymerge is looking. Both locations may be right; they are not the same location.
+
+**The composition, and what is already built elsewhere.** The source note assembles what an intent-carrying layer over a convergent heap would do from three frameworks in the same body of work — the Tiered Content Framework (declared constraints and status propagation), the Governed Schema Evolution Framework (blast-radius classes, fail-closed admissibility, upper-bound claims), and Application note A's principles (protected surfaces, act-time standing, claim-with-basis verification, lineage, exportable record). Six steps, with the note's assessment of what other systems already do and what remains open:
+
+| Step | Mechanism | Already built elsewhere, or still open? |
+|---|---|---|
+| 1. Declare which objects carry invariants | Protected-surface list; constraint declaration at the lowest tier | Open — transposes near-directly from the source frameworks |
+| 2. On a write to a protected object, emit a basis record | Who, what, grant, when, precondition heads, claim status | Partly built — Coln commits already carry dependency heads, author, and timestamp; the governance fields are the delta |
+| 3. At merge, check basis against converged heads | Basis holds → admit; stale → refuse, defer, or admit-and-mark | **Built at the mechanism** — Coln refuses at merge in code (`check_rules` with snapshot rollback in `store/mod.rs`); the move operation and ECROs prevent by construction; the runtime form of a settling window exists in ECRO's tentative-until-stable state. Open at what the refusal *says*: a record of which declared refusal state applied — the schema-evolution framework's distinct refusal states, not Coln's runtime return — and the settling window as a field in that record rather than a runtime state |
+| 4. Propagate correctness status | A converged object's status is the weakest of the operations that produced it; emergent checks run at composition | Open; field schema untested on state with no authoring direction |
+| 5. Record what was and wasn't checked | `pass` / `fail` / `not_run` per declared invariant per merge | Open where checks can be skipped or undeclared; in a system where every compiled rule runs at every merge, `not_run` has no state to occupy |
+| 6. Make the record readable off-platform | Stable shape; export; decay date | Open — a record of the refusal or verdict itself, not the state from which a verdict could be re-derived |
+
+**What remains open.** After review, the composition does not solve the invariant gap and does not own the refusal. What none of the three reference systems carries, as read, is three things. **L1 — repair standing:** who is entitled to repair a refused merge, and under what grant; absent in all three (the lab note's own phrase for the repairer, "the user (or an AI)," is an unanswered standing question). **L2 — refusal evidence:** persisted evidence of a refusal that survives causal stability *and* names the check basis — which declared invariants or preconditions were checked, which failed, which never ran; each half exists somewhere, the combination nowhere. **L3 — a deferred-party record:** a record of the refusal or verdict itself, readable without the store, as distinct from state from which a party with a checker could re-derive one. The contribution this pattern can make is the Standing and Evidence half of the invariant gap. The Crossing half is already built.
+
+**Standing of the note.** The source note considers three possible outcomes for this work: an application note to this entry, a new crossing type with its own entry, or a fourth governance framework alongside the author's three existing ones (content, code change, schema change). Only the first is warranted on current evidence. The other two are not ruled out; the note's §5 records what would have to be shown for either.
+
+### Lateral cross-reference
+
+The two notes are setting-specific instances of the same principles, and cite each other rather than either citing the other as parent:
+
+- **A → B.** GC-2 (standing at act time) is what B's L1 asks for; GC-4 (a verdict with a recorded basis and a `not_run` state) is what B's L2 asks for; GC-6 (the record outlives the platform) is what B's L3 asks for.
+- **B → A.** L1 is GC-2 with the repairing party named; L2 is GC-4 applied per merge rather than per change; L3 is GC-6 with re-derivable state ruled out as a substitute for the record.
+
+Neither note adds a trigger to *What fires a governed crossing*. The only thing that would is the condition for a new crossing type recorded in the second note's §5, which has not been met.
+
+---
+
 ## How This Sits in the Series
 
 The Pattern Commons series has been building toward this document without naming it. Each entry demonstrated a governed crossing in a domain-specific context. The employment seam forced all four Seam Stack layers into view simultaneously and made the generalization unavoidable.
@@ -266,23 +343,25 @@ Future Pattern Commons entries that instantiate the governed crossing should:
 
 ### Conventions for series entries
 
-The header of a public Pattern Commons entry is for the reader, not for the governance record. It carries: **Status** (one reader-facing sentence naming the version and what it is), **Date**, **Author**, **Series**, **Companion entries**, **Governing architecture** (name and current revision), and one **Stamps** line limited to register, Lexicon version, and any active stamp name. Ledger references, finding identifiers, Counter-Pass narrative, and manifest references belong in the entry's Changelog, where a revision reads them. An entry's parent-pattern line cites this entry by version. Entries issued before this convention conform at their next revision; this entry conforms as of v0.2.
+The header of a public Pattern Commons entry is for the reader, not for the governance record. It carries: **Status** (one reader-facing sentence naming the version and what it is), **Date**, **Author**, **Series**, **Companion entries**, **Governing architecture** (name and current revision), and one **Stamps** line limited to register, Lexicon version, and any active stamp name. The Changelog is also for the reader: it says what changed and why, in plain terms. Session provenance — ledger references, finding identifiers, review narrative, manifest and commit references — lives in this project's working records, not in the entry. An entry's parent-pattern line cites this entry by version. Entries issued before this convention conform at their next revision; this entry conforms as of v0.3.
 
 Open items for future sessions:
 
 - **General failure taxonomy** — a domain-agnostic taxonomy of failure states for governed crossings, derived from the union of existing domain taxonomies
 - **Grantor eligibility model** — a general participant model specifying which classes are eligible grantors and which are eligible crossing parties across domains, from which domain entries derive their specific participant models
-- **PC#0 Counter-Pass** — v0.1.1 was paneled (SL-0072). Everything added since — the v0.1.2 Conformance and Canonical Status section, and the v0.2 subsections What the record binds and Conventions for series entries — is SINGLE-CONTEXT and not paneled. A Counter-Pass on v0.2 covering those three additions is available before any publication-track use, and retires the stamp
+- **Independent review of v0.3** — v0.1.1 went through independent adversarial review. Everything added or reworded since — the v0.1.2 Conformance and Canonical Status section; the v0.2 subsections What the record binds and Conventions for series entries; the reworded generality claim in Prior Instantiations as Evidence; and the updated Domain Instances rows for #8 and #9; and the v0.3 Application Notes section — has not. A review of v0.3 covering those changes is due before any wider publication
 
 ---
 
 ## Changelog
 
-**v0.2 (2026-09-01).** Amendment session under PC#8 manifest r7.3 (Mode 1, single context; ⚑ SINGLE-CONTEXT — NOT PANELED). Base: v0.1.2 at `17be239` (sha `9ad20b6f…`), fetched and sha-verified before editing. (1) New subsection *What the record binds* under The Pattern: the payload-provenance rule and the block-vs-fault principle adopted at the general-seam level — the residual named by UFO Lexicon v2.6 ruling L9 (SL-0194 PC#00-half). Seam-scoped forms remain in PC#8 v0.3. (2) New subsection *Conventions for series entries* under What Comes Next: the public-header convention (F-B4 / PC#8 v0.3 ruling G2, scoped here by operator ruling); applied to this entry's own header in the same revision. (3) Header: Status reader-facing; Lexicon reference v1.5 → v2.6 (also in Boundary Principles); Artifact B reference r2 → r2.10; "NI-5 in effect" removed. (4) Prior Instantiations as Evidence: NI-5 wording replaced with the two-substrate bound (SL-0128); #8 counted as prototype-verified. (5) Domain Instances #8 row → Phases 0–3 complete. (6) Companion entries: #4 marked infrastructure, matching the reclassification already in the body; #9 added (absent since its issuance) and given a Domain Instances row. No Counter-Pass verdict from SL-0072 modified. Routed design lines 6 and 18b from the PC#8 reconciliation are not lifted here — they are seam-scoped design principles (Lexicon v2.6 L10) and stay in PC#8.
+**v0.3 (2026-09-06).** New section *Application Notes*, showing the pattern applied to two settings the domain entries did not cover: shared workspaces written by teams of agents, and convergent shared state (CRDT-backed systems). Each note condenses a longer working note and cites it. Neither adds a trigger, a layer, or a constitutive property; the trigger list is unchanged. "Substrate" is used only in the Seam Stack layer sense. The Changelog convention was amended so that this section is written for the reader and session provenance remains in the project's working records; the v0.1.1 and v0.2 entries below were rewritten to conform to that convention, with no change to what they record. Header, footer, and the open-items list updated for the new version.
+
+**v0.2 (2026-09-01).** New subsection *What the record binds* under The Pattern: the payload-provenance rule and the block-vs-fault distinction, first observed in the substrate-crossing seam (#8), stated at the level of the pattern; the seam-specific forms stay in #8. New subsection *Conventions for series entries* under What Comes Next, applied to this entry's own header in the same revision. The generality claim in Prior Instantiations as Evidence was reworded to the two substrates actually built against, with #8 counted as prototype-verified. Domain Instances: #8 row updated to reflect completed prototype phases; #9 added; #4 marked as infrastructure to match the body. Header references brought current (Lexicon v2.6; Artifact B r2.10). No verdict from the v0.1.1 review was modified.
 
 **v0.1.2 (2026-08-20).** Conformance and Canonical Status section added.
 
-**v0.1.1 (2026-08-10).** Counter-Pass applied (SL-0072): R1 narrowed (#4 reclassified as infrastructure); R2 care-domain candidacy conditioned on the open grantor eligibility model; R3 (a) — altitude/Artifact B distinction holds (Item 1 §1.1 is a standalone Form C document, not inside Artifact B).
+**v0.1.1 (2026-08-10).** Independent adversarial review applied: #4 reclassified as infrastructure rather than an instantiation; care-relationship candidacy made conditional on the open grantor eligibility model; the distinction between this entry's altitude and Artifact B confirmed.
 
 **v0.1 (2026-08-09).** Initial draft.
 
@@ -292,4 +371,4 @@ Open items for future sessions:
 
 *The governed crossing pattern and the Seam Stack are documented at [seamstack.org](https://seamstack.org). The governing manifesto-spec is Artifact B — Form C (r2), available in the local-first-series repository.*
 
-*UX Minds, LLC · J. Wright · September 1, 2026*
+*UX Minds, LLC · J. Wright · September 6, 2026*
