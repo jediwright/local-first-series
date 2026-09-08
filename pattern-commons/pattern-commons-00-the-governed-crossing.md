@@ -1,4 +1,4 @@
-# Pattern Commons #0 — The Governed Crossing
+# Pattern Commons #00 — The Governed Crossing
 
 **Status:** v0.3 — two application notes folded in: PC#00 applied to shared workspaces written by teams of agents and to convergent shared state, each condensed from a longer working note. Revision history in the Changelog.  
 
