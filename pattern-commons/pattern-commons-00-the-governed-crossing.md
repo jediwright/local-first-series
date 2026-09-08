@@ -1,12 +1,16 @@
 # Pattern Commons #0 — The Governed Crossing
 
 **Status:** v0.3 — two application notes folded in: PC#00 applied to shared workspaces written by teams of agents and to convergent shared state, each condensed from a longer working note. Revision history in the Changelog.  
-**Date:** September 6, 2026 (v0.3) · September 1, 2026 (v0.2) · August 20, 2026 (v0.1.2)  
+
+**Date:** September 6, 2026 (v0.3) · September 1, 2026 (v0.2) · August 20, 2026 (v0.1.2)
+
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted  
-**Series:** Local-first prototype series — Pattern Commons  
+
+**Series:** Local-first prototype series — Pattern Commons 
+
 **Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver (infrastructure) · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam · #8 substrate-crossing seam · #9 governed content production crossing  
+
 **Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2.10)  
-**Stamps:** CONTEXTUAL register. Form C cluster PROPOSED per UFO Lexicon v2.6. ⚑ SINGLE-CONTEXT — NOT PANELED (additions since v0.1.1 not yet independently reviewed).
 
 ---
 
