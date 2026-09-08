@@ -24,13 +24,13 @@ A governed crossing is the boundary event at which a party with contextual knowl
 
 ## What This Document Is
 
-Pattern Commons #0 is the root entry in the Pattern Commons series. It does not describe a new domain. It names and formalizes the pattern that the prior domain entries — #1, #2, #3, #5, #6, and #7 — have been instantiating. Entry #4 (attachArrayObserver) is infrastructure machinery used within instantiations, not an instantiation of the pattern: it carries no grant event and no grantor party of its own.
+Pattern Commons #00 is the root entry in the Pattern Commons series. It does not describe a new domain. It names and formalizes the pattern that the prior domain entries — #1, #2, #3, #5, #6, and #7 — have been instantiating. Entry #4 (attachArrayObserver) is infrastructure machinery used within instantiations, not an instantiation of the pattern: it carries no grant event and no grantor party of its own.
 
 The series has demonstrated the governed crossing across commerce (one seam per transaction), healthcare (one seam per intake), social networking (a seam per connection, distributed), and employment (a seam at every state change in a working relationship). Each domain generated its own spec. None of them named the abstract pattern they were demonstrating.
 
 This document does that.
 
-The employment seam (Pattern Commons #7) is the entry where the pattern became fully visible — where all four Seam Stack layers became necessary at once, where the legal and evidentiary stakes forced the architecture into explicit view, and where the generalization became unavoidable. Pattern Commons #0 is not a retroactive reframe of #7. It is the document #7 implied and that the architecture had been building toward.
+The employment seam (Pattern Commons #7) is the entry where the pattern became fully visible — where all four Seam Stack layers became necessary at once, where the legal and evidentiary stakes forced the architecture into explicit view, and where the generalization became unavoidable. Pattern Commons #00 is not a retroactive reframe of #7. It is the document #7 implied and that the architecture had been building toward.
 
 ---
 
@@ -106,7 +106,7 @@ A governed crossing fires whenever the legal, evidentiary, or relational status 
 - When a party exits a relationship (separation, contract close, transaction complete, connection severed, engagement ended)
 - When a relay party enters or exits a chain (a sub-contractor onboarding to a project, an agent receiving a delegated capability grant, a new party joining an existing governed relationship)
 
-The triggering condition is a state change, not termination. This is the distinction the prior entries in the series made implicitly. Pattern Commons #0 makes it explicit.
+The triggering condition is a state change, not termination. This is the distinction that the prior entries in the series implicitly made. Pattern Commons #00 makes it explicit.
 
 ---
 
@@ -123,7 +123,7 @@ The governed crossing is specified against a four-layer architecture — the Sea
 
 None of the four layers is novel in isolation. The synthesis claim — that all four are required, that they compose into a coherent architecture for any system where boundary events carry legal or evidentiary weight, and that missing any one of them is a structural failure — is what the Pattern Commons series demonstrates.
 
-The employment seam is the entry where all four layers became necessary at once. Prior entries demonstrated aspects of the stack; #7 required the complete composition. Pattern Commons #0 names the composition as the pattern.
+The employment seam is the entry where all four layers became necessary at once. Prior entries demonstrated aspects of the stack; #7 required the complete composition. Pattern Commons #00 names the composition as the pattern.
 
 ---
 
@@ -203,7 +203,7 @@ The four constitutive properties — declared scope, grant, gate, record — are
 - **Bundle schema** — what knowledge artifacts cross at the seam; how they are structured; what the receiving party's ingestion format is
 - **Identity verification ceremony** — how parties establish cryptographic identity before the crossing fires; what assurance level each class requires
 
-Pattern Commons #0 specifies none of these. They are the work of the domain entries. This entry specifies only what is common to all of them.
+Pattern Commons #00 specifies none of these. They are the work of the domain entries. This entry specifies only what is common to all of them.
 
 ---
 
@@ -245,7 +245,7 @@ The generality claim is bounded by the substrates actually built against: a loca
 
 **Witness quorum and signed-timestamp anchoring.** The `lineageAnchorType: witness-signed` and `timestamp-signed` values are defined in the crossing-record vocabulary but locked pending infrastructure. Author-declared lineage is the current v0 default. This limit is named in the vocabulary and is not papered over.
 
-**Domain-specific failure taxonomies.** Pattern Commons #0 does not specify failure states. Each domain instantiation carries its own failure taxonomy. A general failure taxonomy for the governed crossing class is a future derivation item, not a current known limit — it has not been attempted.
+**Domain-specific failure taxonomies.** Pattern Commons #00 does not specify failure states. Each domain instantiation carries its own failure taxonomy. A general failure taxonomy for the governed crossing class is a future derivation item, not a current known limit — it has not been attempted.
 
 **Inter-seam composition.** Pattern-conformant implementations in different domains — a healthcare seam and a housing seam, for example — both produce valid governed crossings, but their schemas do not automatically compose across domains. The inter-seam layer (cross-domain record composition under a shared identity anchor) is the next unspecified architectural tier. Builders implementing the pattern today should expect this layer to evolve above them.
 
