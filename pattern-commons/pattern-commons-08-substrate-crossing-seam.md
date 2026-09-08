@@ -1,22 +1,24 @@
-⚑ STAMP: SINGLE-CONTEXT — NOT PANELED
-All claims produced across producer (v0.1) and Counter-Pass iterations 1–3 (2026-08-17). Counter-Pass program complete — three iterations; all six resolutions survive narrowed; no design verdict overturned at any iteration.
-Four mechanical residuals from iteration 3 applied as v0.1.3. Landscape Position section added as v0.1.4 (2026-08-18). Form C cluster PROPOSED per UFO Lexicon v2.6. Substrate-crossing vocabulary registered (Lexicon v2.3; Phase 3 terms v2.6). CONTEXTUAL register throughout. NI-5 CLOSED at two-substrate scope (SL-0128); no generality claim beyond it.
-v0.2 (2026-08-30): Phase 3 as-implemented terms absorbed; rebased onto v0.1.4. v0.3 (2026-08-31): post-prototype revision — see Changelog.
+# Pattern Commons #8 — The Substrate-Crossing Seam
 
 ---
 
-# Pattern Commons #8 — The Substrate-Crossing Seam
-
 **Status:** Draft v0.3 — post-prototype revision. The prototype this entry was written ahead of now exists: Phases 0–3 complete and verified at [`fb05ea1`](https://github.com/jediwright/employment-seam) (eight governed runs against a live PDS; 51/51 tests). Known Limits closed by that evidence are marked as such; the rest remain open.  
+
 **Date:** August 31, 2026 (v0.3) · August 30, 2026 (v0.2) · August 18, 2026 (v0.1.4)  
+
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted  
-**Derived from:** Substrate-crossing seam speculative design sketch, 2026-08-17 (`substrate-crossing-seam-design-sketch_2026-08-17.md`); OQ-5 operator decision, 2026-08-17; fact-base corrections web-verified 2026-08-17.  
+
+**Derived from:** Substrate-crossing seam speculative design sketch, 2026-08-17 (`substrate-crossing-seam-design-sketch_2026-08-17.md`); OQ-5 operator decision, 2026-08-17; fact-base corrections web-verified 2026-08-17. 
+
 **Series:** Local-first prototype series — Pattern Commons  
+
 **Parent pattern:** Pattern Commons #0 — The Governed Crossing (v0.1.1)  
+
 **Companion entries:** #1 checkout seam · #2 high-stakes seam · #3 profile map as local CRM · #4 attachArrayObserver (infrastructure) · #5 distributed seam · #6 CRDT as trust graph · #7 employment seam  
+
 **Governing architecture:** Artifact B — Form C Standalone Framework Manifesto-Spec (r2.10). This entry does not amend Artifact B and makes no claim on its behalf.  
+
 **Base shape:** `seam:CrossingRecord` (`https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#`)  
-**Stamps:** ⚑ SINGLE-CONTEXT — NOT PANELED. All confidence ~ unless otherwise marked. Ledger: SL-0105 (issuance); SL-0106 (Lexicon v1.8); SL-0107 (CP iter 1); SL-0108–SL-0109 (CP iter 2); SL-0110–SL-0112 (CP iter 3 / program close); SL-0122 (v0.1.4 Landscape Position); SL-0190 / SL-0191 validation events fire at v0.2; SL-0193 successor gate (routed-line promotion) closes at v0.3; SL-0194 (Lexicon v2.6). Prototype evidence: SL-0121 (KL-1/KL-2), SL-0114 (KL-8a/8c), SL-0128 (NI-5), SL-0129 (vocabulary promotion), SL-0188/SL-0189 (Phase 3).  
 
 ---
 
