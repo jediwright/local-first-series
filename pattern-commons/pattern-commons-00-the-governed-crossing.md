@@ -1,8 +1,8 @@
 # Pattern Commons #00 — The Governed Crossing
 
-**Status:** v0.3 — two application notes folded in: PC#00 applied to shared workspaces written by teams of agents and to convergent shared state, each condensed from a longer working note. Revision history in the Changelog.  
+**Status:** v0.3.1 — v0.3 with one addition: a pointer to the first binding of the crossing record, in the `governedcrossing` repository. Revision history in the Changelog.  
 
-**Date:** September 6, 2026 (v0.3) · September 1, 2026 (v0.2) · August 20, 2026 (v0.1.2)
+**Date:** October 2, 2026 (v0.3.1) · September 6, 2026 (v0.3) · September 1, 2026 (v0.2) · August 20, 2026 (v0.1.2)
 
 **Author:** J. Wright (UX Minds, LLC) · AI-assisted  
 
@@ -141,6 +141,8 @@ The base shape carries four required field groups:
 The crossing record is not an audit log. It is a first-class architectural output — the artifact that makes the crossing legible to any deferred party without requiring platform mediation to interpret. A governed crossing that produces no crossing record is not governed; it is an event that occurred and left no evidence of its terms.
 
 IRI namespace: `https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#`
+
+First binding: the [`governedcrossing`](https://github.com/jediwright/governedcrossing) repository writes this record down as draft AT Protocol lexicons (`org.governedcrossing.temp.*`), with conformance rules and a live example: one public crossing, recorded as a signed intent and completion. The lexicons are drafts and may change. The crossing is also shown as a [short animation](https://governedcrossing.org/motion-plate/).
 
 ---
 
@@ -361,6 +363,8 @@ Open items for future sessions:
 
 ## Changelog
 
+**v0.3.1 (2026-10-02).** Pointer added in *The Crossing Record* to the first binding of the record: draft AT Protocol lexicons, conformance rules, and a live example, in the `governedcrossing` repository. No change to the pattern, the trigger list, or the base shape of the record. Header and footer updated for the new version.
+
 **v0.3 (2026-09-06).** New section *Application Notes*, showing the pattern applied to two settings the domain entries did not cover: shared workspaces written by teams of agents, and convergent shared state (CRDT-backed systems). Each note condenses a longer working note and cites it. Neither adds a trigger, a layer, or a constitutive property; the trigger list is unchanged. "Substrate" is used only in the Seam Stack layer sense. The Changelog convention was amended so that this section is written for the reader and session provenance remains in the project's working records; the v0.1.1 and v0.2 entries below were rewritten to conform to that convention, with no change to what they record. Header, footer, and the open-items list updated for the new version.
 
 **v0.2 (2026-09-01).** New subsection *What the record binds* under The Pattern: the payload-provenance rule and the block-vs-fault distinction, first observed in the substrate-crossing seam (#8), stated at the level of the pattern; the seam-specific forms stay in #8. New subsection *Conventions for series entries* under What Comes Next, applied to this entry's own header in the same revision. The generality claim in Prior Instantiations as Evidence was reworded to the two substrates actually built against, with #8 counted as prototype-verified. Domain Instances: #8 row updated to reflect completed prototype phases; #9 added; #4 marked as infrastructure to match the body. Header references brought current (Lexicon v2.6; Artifact B r2.10). No verdict from the v0.1.1 review was modified.
@@ -377,4 +381,4 @@ Open items for future sessions:
 
 *The governed crossing pattern and the Seam Stack are documented at [seamstack.org](https://seamstack.org). The governing manifesto-spec is Artifact B — Form C (r2), available in the local-first-series repository.*
 
-*UX Minds, LLC · J. Wright · September 6, 2026*
+*UX Minds, LLC · J. Wright · October 2, 2026*
